@@ -12,40 +12,55 @@ body {margin:0;}
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
+    overflow: auto;
     position: fixed;
     top: 0;
     width: 100%;
     opacity: 100%;
 }
 
-li {
-    float: left;
+li{
+  padding-top: 10px;
+  float: left;
 }
 
 li a {
+  padding: 14px 16px;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #666;
+    background-color: #fff;
     color: #000;
 
 }
 
+
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 16px/1.8 "Lato", sans-serif;
   color: #777;
 }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
 
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+}
 .bgimg-1,.bgimg-2{
   position: relative;
   opacity: 0.90;
@@ -84,16 +99,45 @@ h3 {
 </style>
 </head>
 <body style="background-color:Black;">
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#Speaker">Speaker</a></li>
-  <li><a href="#Sponsors">Sponsors</a></li>
-  <li><a href="#Rules">Rules</a></li>
-  <li><a href="#Contact Us">Contact Us</a></li>
+<div class="w3-top">
+  <div class="navbar">
+  <div class="w3-bar w3-black">
+  
+    <center id="home1" style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red">TED</span><sup style="font-size:35px">x</sup>SNIST</center>
+    <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
+    <header class="navigation">
+    <nav>
+    <ul >
+  <li style="padding-top: 30px;"><a href="head.html"    style="font-family:arial;font-size:15px">Home</a></li>
+  <li style="padding-top: 30px;"><a href="speaker.html"    style="font-family:arial;font-size:15px">Speaker</a></li>
+  <li style="padding-top: 30px;"><a href="#contact" style="font-family:arial;font-size:15px">Sponsors</a></li>
+  <li style="padding-top: 30px;"><a href="#rules"   style="font-family:arial;font-size:15px">Rules</a></li>
+  <li style="padding-top: 30px;"><a href="#about"   style="font-family:arial;font-size:15px">Contact Us</a></li>
+  <div class="w3-xlarge w3-section">
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  </li>
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </li>
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+  </li>
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </li>
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </li>
+</div>
 </ul>
-    <center id="home" style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red">TED</span><sup style="font-size:35px">x</sup>SNIST</center>
-    <center style="color:#fff;font-family:arial"><span style="color:red">x </span>= independently organized TED event</center>
-   
+</nav>
+  </header>
+  </div>
+</div>
+</div>
+
+<br><br><br>
 <div  class="w3-content w3-section" style="max-width:2000px;max-height:500px">
   
 
@@ -128,16 +172,15 @@ The annual TED Conference takes place each spring in Vancouver, British Columbia
 </div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home1" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="" title="SNIST GEEKS" target="_blank" class="w3-hover-text-green">SNIST GEEKS</a></p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="SNIST GEEKS" target="_blank" class="w3-hover-text-green">SNIST GEEKS</a></p>
 </footer>
 <script>
 var myIndex = 0;
