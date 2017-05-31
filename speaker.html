@@ -60,71 +60,29 @@ body, html {
   padding: 5px 15px;
   text-decoration: none;
 }
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    padding-left: 30px;
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-     /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.cont {
+  background-color: #222;
 }
-
-/* Modal Content */
-.modal-content {
-    background-color: #fff;
-    color:#000;
-    margin: auto;
-    padding: 0px;
-    width: 80%;
+.ig1{
+  display: inline;
 }
-.container {
-    display:inline-block;
-    position: relative;
-    width: 20%;
-    
+.ig{
+  padding-left: 230px;
 
+  display: inline;
 }
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
 .text {
   background-color: #4CAF50;
   color: white;
   font-size: 13px;
   padding: 16px 32px;
 }
-
+.sp{
+border-radius:10px;border:5px solid red;padding:10px;font-size:40px;color:#fff
+}
+.sp:hover{
+  border:5px solid white;
+}
 
 </style>
 </head>
@@ -166,97 +124,35 @@ body, html {
   </div>
 </div>
 </div>
+<div class="cont">
    <br><br><br><br><br>
-<div style="background-color:#333;height:1700px;width:100%;padding-left:50px;">
-  <br>
-<div class="container">
-  <img src="img_avatar.png" alt="Avatar" class="image" style="width:300px;height:300px;">
-  <div class="middle">
-    <a id="myBtn"><div class="text">Name one</div></a>
-  </div>
-</div>
-<div class="container">
-  <img src="img_avatar.png" alt="Avatar" class="image" style="width:300px;height:300px;float:right">
-  <div class="middle">
-    <a id="myBtn1"><div class="text">Name two</div></a>
-  </div>
-</div>
-<br>
-<br>
-<div class="container">
-  <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <a id="myBtn2"><div class="text">Name three</div></a>
-  </div>
-</div>
-<br>
-<br>
-<div class="container">
-  <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
-
-  <div class="middle">
-    <a id="myBtn3"><div class="text">Name four</div></a>
-  </div>
-</div>
-<br><br>
-<div class="container">
-  <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <a id="myBtn4"><div class="text">Name five</div></a>
-  </div>
-</div>
-<br>
-<br>
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close"></span>
-    <p style="font-size:30px;text-align:center">Some text in the Modal..<br></p>
-    <p style="font-size:15px;text-align:center">yeh we</p>
-  </div>
-
-</div>
-<div id="myModal1" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close"></span>
-    <p style="font-size:30px;text-align:center">..<br></p>
-    <p style="font-size:15px;text-align:center">yeh we</p>
-  </div>
-
-</div>
-<div id="myModal2" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close"></span>
-    <p style="font-size:30px;text-align:center">..<br></p>
-    <p style="font-size:15px;text-align:center">yeh we</p>
-  </div>
-
-</div>
-<div id="myModal3" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close"></span>
-    <p style="font-size:30px;text-align:center">..<br></p>
-    <p style="font-size:15px;text-align:center">yeh we</p>
-  </div>
-
-</div>
-<div id="myModal4" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close"></span>
-    <p style="font-size:30px;text-align:center">..<br></p>
-    <p style="font-size:15px;text-align:center">yeh we</p>
-  </div>
-
-</div>
+   
+   <p style="text-align:center;"><span class="sp">Speakers</span></p>
+   <br>
+    <div class="ig">
+      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+   </div>
+   <div class="ig">
+      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+   </div>
+   <div class="ig">
+      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+   </div>
+ <br><br><br>
+ <div class="ig1">
+  <div style="padding-left:435px;display:inline">
+      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+   </div>
+ </div>
+   <div class="ig1">
+    <div style="padding-left:230px;display:inline">
+      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+   </div>
+   </div>
+   <br><br><br>
+   
+   <br><br><br>
+ </div>
 <script>
 // Get the modal
 var modal = document.getElementById('myModal');
