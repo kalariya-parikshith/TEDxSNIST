@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head >
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 100%;
+}
+
+li {
+  padding-top: 10px;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+      
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #fff;
+    color: #000;
+
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 16px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    padding-left: 30px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+     /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    color:#000;
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+}
+.container {
+    display:inline-block;
+    position: relative;
+    width: 20%;
+    
+
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 13px;
+  padding: 16px 32px;
+}
+
+
+</style>
+</head>
+<body style="background-color:Black;">
+<div class="w3-top">
+  <div class="navbar">
+  <div class="w3-bar w3-black">
+  
+    <center id="home1" style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red">TED</span><sup style="font-size:35px">x</sup>SNIST</center>
+    <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
+    <header class="navigation">
+    <nav>
+    <ul >
+  <li style="padding-top: 30px;"><a href="head.html"    style="font-family:arial;font-size:15px">Home</a></li>
+  <li style="padding-top: 30px;"><a href="speaker.html"    style="font-family:arial;font-size:15px">Speaker</a></li>
+  <li style="padding-top: 30px;"><a href="#contact" style="font-family:arial;font-size:15px">Sponsors</a></li>
+  <li style="padding-top: 30px;"><a href="#rules"   style="font-family:arial;font-size:15px">Rules</a></li>
+  <li style="padding-top: 30px;"><a href="#about"   style="font-family:arial;font-size:15px">Contact Us</a></li>
+  <div class="w3-xlarge w3-section">
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  </li>
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </li>
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+  </li>
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </li>
+  <li style="float:right;padding-right:20px;" >
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </li>
+</div>
+</ul>
+</nav>
+  </header>
+  </div>
+</div>
+</div>
+   <br><br><br><br><br>
+<div style="background-color:#333;height:1700px;width:100%;padding-left:50px;">
+  <br>
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image" style="width:300px;height:300px;">
+  <div class="middle">
+    <a id="myBtn"><div class="text">Name one</div></a>
+  </div>
+</div>
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image" style="width:300px;height:300px;float:right">
+  <div class="middle">
+    <a id="myBtn1"><div class="text">Name two</div></a>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <a id="myBtn2"><div class="text">Name three</div></a>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
+
+  <div class="middle">
+    <a id="myBtn3"><div class="text">Name four</div></a>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <a id="myBtn4"><div class="text">Name five</div></a>
+  </div>
+</div>
+<br>
+<br>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"></span>
+    <p style="font-size:30px;text-align:center">Some text in the Modal..<br></p>
+    <p style="font-size:15px;text-align:center">yeh we</p>
+  </div>
+
+</div>
+<div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"></span>
+    <p style="font-size:30px;text-align:center">..<br></p>
+    <p style="font-size:15px;text-align:center">yeh we</p>
+  </div>
+
+</div>
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"></span>
+    <p style="font-size:30px;text-align:center">..<br></p>
+    <p style="font-size:15px;text-align:center">yeh we</p>
+  </div>
+
+</div>
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"></span>
+    <p style="font-size:30px;text-align:center">..<br></p>
+    <p style="font-size:15px;text-align:center">yeh we</p>
+  </div>
+
+</div>
+<div id="myModal4" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"></span>
+    <p style="font-size:30px;text-align:center">..<br></p>
+    <p style="font-size:15px;text-align:center">yeh we</p>
+  </div>
+
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
+var btn4 = document.getElementById("myBtn4");
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+btn4.onclick = function() {
+    modal4.style.display = "block";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    else if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+    else if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+    else if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+    else if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+}
+
+</script>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey" style=""><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="SNIST GEEKS" target="_blank" class="w3-hover-text-green">SNIST GEEKS</a></p>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+
+</body>
+</html>
