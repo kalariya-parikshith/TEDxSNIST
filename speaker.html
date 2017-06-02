@@ -3,9 +3,7 @@
 <head >
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="sty.css">
 <style>
 body {margin:0;}
 
@@ -24,20 +22,21 @@ li {
     float: left;
 }
 
-li a {
+.nav_a {
+  padding: 14px 16px;
     display: block;
     color: white;
     text-align: center;
-      
     text-decoration: none;
+    font-family:arial;
+    font-size:15px
 }
 
-li a:hover:not(.active) {
-    background-color: #fff;
-    color: #000;
+.nav_a:hover:not(.active) {
+    background-color: red;
+    color: #fff;
 
 }
-
 body, html {
   height: 100%;
   margin: 0;
@@ -57,8 +56,29 @@ body, html {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 5px 15px;
+  padding: 10px 15px;
   text-decoration: none;
+}
+.navli{
+  padding-top: 30px;
+}
+.navlink{
+  float: right;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 .cont {
   background-color: #222;
@@ -67,8 +87,7 @@ body, html {
   display: inline;
 }
 .ig{
-  padding-left: 230px;
-
+  padding-left: 200px;
   display: inline;
 }
 .text {
@@ -78,12 +97,25 @@ body, html {
   padding: 16px 32px;
 }
 .sp{
-border-radius:10px;border:5px solid red;padding:10px;font-size:40px;color:#fff
+  border-radius:10px;
+  border:5px solid red;
+  padding:10px;
+  font-size:40px;
+  color:#fff;
 }
 .sp:hover{
   border:5px solid white;
 }
-
+.imgclass{
+  width:250px; 
+  border-radius: 10px; 
+  border:5px solid #fff;
+}
+.imgclass:hover{
+  width:250px; 
+  border-radius: 15px;
+  border:5px solid #fff;
+}
 </style>
 </head>
 <body style="background-color:Black;">
@@ -91,31 +123,28 @@ border-radius:10px;border:5px solid red;padding:10px;font-size:40px;color:#fff
   <div class="navbar">
   <div class="w3-bar w3-black">
   
-    <center style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red">TED</span><sup style="font-size:35px">x</sup>SNIST</center>
+    <center  style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
     <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
     <header class="navigation">
     <nav>
     <ul >
-  <li style="padding-top: 30px;"><a href="head.html"    style="font-family:arial;font-size:15px">Home</a></li>
-  <li style="padding-top: 30px;"><a href="speaker.html"    style="font-family:arial;font-size:15px">Speaker</a></li>
-  <li style="padding-top: 30px;"><a href="#contact" style="font-family:arial;font-size:15px">Sponsors</a></li>
-  <li style="padding-top: 30px;"><a href="#rules"   style="font-family:arial;font-size:15px">Rules</a></li>
-  <li style="padding-top: 30px;"><a href="#about"   style="font-family:arial;font-size:15px">Contact Us</a></li>
+  <li style="padding-top: 30px;"><a href="head.html" class="nav_a">Home</a></li>
+  <li style="padding-top: 30px;"><a href="speaker.html"    class="nav_a">Speaker</a></li>
+  <li style="padding-top: 30px;"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
+  <li style="padding-top: 30px;"><a href="#rules"   class="nav_a">Rules</a></li>
+  <li style="padding-top: 30px;"><a href="#about"   class="nav_a">Contact Us</a></li>
   <div class="w3-xlarge w3-section">
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <li class="navlink" >
+    <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
   </li>
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-instagram w3-hover-opacity"></i>
+  <li class="navlink" >
+    <a href="https://www.instagram.com/tedxsnist/"><img src="insta_black.png" onmouseover="this.src='insta_red.png'"
+onmouseout="this.src='insta_black.png'" border="0" alt="" style="width:40px;"></a>
   </li>
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-  </li>
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-  </li>
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <li class="navlink" >
+    <a href="https://twitter.com/tedxsnist?s=09"><img src="twit_black.png" onmouseover="this.src='twit_red.png'"
+onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a>
   </li>
 </div>
 </ul>
@@ -130,23 +159,23 @@ border-radius:10px;border:5px solid red;padding:10px;font-size:40px;color:#fff
    <p style="text-align:center;"><span class="sp">Speakers</span></p>
    <br>
     <div class="ig">
-      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+      <img src="img_avatar.png" class="imgclass">
    </div>
    <div class="ig">
-      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+      <img src="img_avatar.png" class="imgclass">
    </div>
    <div class="ig">
-      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+      <img src="img_avatar.png" class="imgclass">
    </div>
  <br><br><br>
  <div class="ig1">
-  <div style="padding-left:435px;display:inline">
-      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+  <div style="padding-left:430px;display:inline">
+      <img src="img_avatar.png" class="imgclass">
    </div>
  </div>
    <div class="ig1">
-    <div style="padding-left:230px;display:inline">
-      <img src="img_avatar.png" style="width:200px;border-radius: 15px;border:5px solid #fff;">
+    <div style="padding-left:200px;display:inline; ">
+      <img src="img_avatar.png" class="imgclass">
    </div>
    </div>
    <br><br><br>
@@ -209,33 +238,20 @@ window.onclick = function(event) {
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home1" class="w3-button w3-light-grey" style=""><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home1" class="w3-button w3-light-grey">To the top &#8593;</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+    <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:70px;"></a>
+    <a href="https://www.instagram.com/tedxsnist/"><img src="insta_black.png" onmouseover="this.src='insta_red.png'"
+onmouseout="this.src='insta_black.png'" border="0" alt="" style="width:70px;"></a>
+<a href="https://twitter.com/tedxsnist?s=09"><img src="twit_black.png" onmouseover="this.src='twit_red.png'"
+onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:70px;"></a>
+</div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="SNIST GEEKS" target="_blank" class="w3-hover-text-green">SNIST GEEKS</a></p>
+  <p>&#169 TEDxSNIST</p>
+  <p>This independent TEDx event is operated under license from TED</p>
 </footer>
-<script>
-var myIndex = 0;
-carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-}
-</script>
 
 </body>
 </html>
