@@ -3,9 +3,7 @@
 <head >
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="sty.css">
 <style>
 body {margin:0;}
 
@@ -24,21 +22,43 @@ li{
   float: left;
 }
 
-li a {
+
+.nav_a {
   padding: 14px 16px;
     display: block;
     color: white;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
+    font-family:arial;
+    font-size:15px
 }
 
-li a:hover:not(.active) {
-    background-color: #fff;
-    color: #000;
+.nav_a:hover:not(.active) {
+    background-color: red;
+    color: #fff;
 
 }
-
-
+.navli{
+  padding-top: 30px;
+}
+.navlink{
+  float: right;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 body, html {
   height: 100%;
   margin: 0;
@@ -58,12 +78,12 @@ body, html {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 5px 15px;
+  padding: 10px 15px;
   text-decoration: none;
 }
 .bgimg-1,.bgimg-2{
   position: relative;
-  opacity: 0.90;
+  opacity: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,7 +92,7 @@ body, html {
 }
 .bgimg-1 {
   background-image: url("img_parallax.jpg");
-  min-height: 100%;
+  min-height: 90%;
 }
 .bgimg-2 {
   background-image: url("forestbridge.jpg");
@@ -94,8 +114,6 @@ h3 {
     }
 }
 
-
-
 </style>
 </head>
 <body style="background-color:Black;">
@@ -103,31 +121,28 @@ h3 {
   <div class="navbar">
   <div class="w3-bar w3-black">
   
-    <center  style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red">TED</span><sup style="font-size:35px">x</sup>SNIST</center>
+    <center style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
     <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
     <header class="navigation">
     <nav>
     <ul >
-  <li style="padding-top: 30px;"><a href="head.html"    style="font-family:arial;font-size:15px">Home</a></li>
-  <li style="padding-top: 30px;"><a href="speaker.html"    style="font-family:arial;font-size:15px">Speaker</a></li>
-  <li style="padding-top: 30px;"><a href="#contact" style="font-family:arial;font-size:15px">Sponsors</a></li>
-  <li style="padding-top: 30px;"><a href="#rules"   style="font-family:arial;font-size:15px">Rules</a></li>
-  <li style="padding-top: 30px;"><a href="#about"   style="font-family:arial;font-size:15px">Contact Us</a></li>
+  <li class="navli"><a href="head.html" class="nav_a">Home</a></li>
+  <li class="navli"><a href="speaker.html"    class="nav_a">Speaker</a></li>
+  <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
+  <li class="navli"><a href="#rules"   class="nav_a">Rules</a></li>
+  <li class="navli"><a href="#about"   class="nav_a">Contact Us</a></li>
   <div class="w3-xlarge w3-section">
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <li class="navlink" >
+    <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
   </li>
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-instagram w3-hover-opacity"></i>
+  <li class="navlink" >
+    <a href="https://www.instagram.com/tedxsnist/"><img src="insta_black.png" onmouseover="this.src='insta_red.png'"
+onmouseout="this.src='insta_black.png'" border="0" alt="" style="width:40px;"></a>
   </li>
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-  </li>
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-  </li>
-  <li style="float:right;padding-right:20px;" >
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <li class="navlink" >
+    <a href="https://twitter.com/tedxsnist?s=09"><img src="twit_black.png" onmouseover="this.src='twit_red.png'"
+onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a>
   </li>
 </div>
 </ul>
@@ -137,9 +152,9 @@ h3 {
 </div>
 </div>
 
-<br><br><br>
-  
-<div id="home1"  class="w3-content w3-section" style="max-width:2000px;max-height:500px">
+<br><br><br><br>
+<div id="home1" >
+<div class="w3-content w3-section" style="max-width:2000px;max-height:500px">
   
 
   <img class="mySlides w3-animate-fading" src="img_fjords_wide.jpg" style="width:100%;height:600px">
@@ -147,15 +162,17 @@ h3 {
   <img class="mySlides w3-animate-fading" src="img_nature_wide.jpg" style="width:100%;height:600px">
   
 </div>
+</div>
 
-<p><br><br><br></p>
-
+<br><br><br>
+<div style="background-color:white;">
 <div  class="bgimg-1">
   <div style="color: #000;text-align:center;text-align: justify;">
-  <h3 style="text-align:center;padding:70px 100px;font-size:50px;">What is TED?</h3>
+  <h3 style="text-align:center;padding:70px 100px;font-size:50px;color:black;">What is TED?</h3>
   <p style="padding:0px 100px;font-size:20px;">TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
 
 The annual TED Conference takes place each spring in Vancouver, British Columbia, along with the TEDActive simulcast event in nearby Whistler. The annual TEDGlobal conference will be held this October in Rio de Janeiro, Brazil. TED's media initiatives include TED.com, where new TED Talks are posted daily; the Open Translation Project, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established the annual TED Prize, where exceptional individuals with a wish to change the world get help translating their wishes into action; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities.</p>
+<br>
 </div>
 </div>
 
@@ -163,25 +180,31 @@ The annual TED Conference takes place each spring in Vancouver, British Columbia
   <h3 style="text-align:center;font-size:35px;">What is TED<sup style="font-size:23px">x</sup>?</h3>
   <p style="font-size:18px;">In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.).</p>
 </div>
+
 <div class="bgimg-2">
-  <div style="text-align:center;text-align: justify;color: #ffffff;">
+  <div style="text-align:center;text-align: justify;color: #cee;">
   <h3 style="text-align:center;padding:70px 100px;font-size:50px;color: #ffffff;">What is TED<sup style="font-size:30px">x</sup>SNIST?</h3>
   <p style="padding:0px 100px;font-size:20px;">TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
 
 The annual TED Conference takes place each spring in Vancouver, British Columbia, along with the TEDActive simulcast event in nearby Whistler. The annual TEDGlobal conference will be held this October in Rio de Janeiro, Brazil. TED's media initiatives include TED.com, where new TED Talks are posted daily; the Open Translation Project, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established the annual TED Prize, where exceptional individuals with a wish to change the world get help translating their wishes into action; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities.</p>
+<br>
+</div>
 </div>
 </div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home1" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home1" class="w3-button w3-light-grey">To the top &#8593;</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+    <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:70px;"></a>
+    <a href="https://www.instagram.com/tedxsnist/"><img src="insta_black.png" onmouseover="this.src='insta_red.png'"
+onmouseout="this.src='insta_black.png'" border="0" alt="" style="width:70px;"></a>
+<a href="https://twitter.com/tedxsnist?s=09"><img src="twit_black.png" onmouseover="this.src='twit_red.png'"
+onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:70px;"></a>
+</div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="SNIST GEEKS" target="_blank" class="w3-hover-text-green">SNIST GEEKS</a></p>
+  <p>&#169 TEDxSNIST</p>
+  <p>This independent TEDx event is operated under license from TED</p>
 </footer>
 <script>
 var myIndex = 0;
