@@ -5,81 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="sty.css">
 <style>
-body {margin:0;}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    overflow: auto;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 100%;
-}
-
-li {
-  padding-top: 10px;
-    float: left;
-}
-
-.nav_a {
-  padding: 14px 16px;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-family:arial;
-    font-size:15px
-}
-
-.nav_a:hover:not(.active) {
-    background-color: red;
-    color: #fff;
-
-}
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 16px/1.8 "Lato", sans-serif;
-  color: #777;
-}
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 15px;
-  text-decoration: none;
-}
-.navli{
-  padding-top: 30px;
-}
-.navlink{
-  float: right;
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
 .cont {
   background-color: #222;
 }
@@ -116,13 +41,219 @@ body, html {
   border-radius: 15px;
   border:5px solid #fff;
 }
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 100%;
+}
+
+li{
+  padding-top: 10px;
+  float: left;
+}
+
+
+.nav_a {
+  padding: 14px 16px;
+    display: block;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-family:arial;
+    font-size:15px
+}
+
+.nav_a:hover:not(.active) {
+    background-color: red;
+    color: #fff;
+
+}
+.navli{
+  padding-top: 30px;
+}
+.navlink{
+  float: right;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 16px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.topnav {
+  
+}
+
+.topnav a {
+  background-color: transparent;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    padding-top: 29px;
+    float: left;
+    display: inline;
+  }
+  .navbar a {
+  float: left;
+  display: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+li a {
+  background-color: #fff;
+    display: inline;
+    color: #000;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+}
+@media screen and (max-width: 1240px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+
+    position: fixed;
+  }
+  .topnav.responsive a {
+    float: left;
+    display: inline-block;
+    text-align: right;
+    background-color: #000;
+  }
+ 
+
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 13%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color: black;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    background-color: red;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-size: 60px;
+    background-color: transparent;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 10px;
+  }
+}
 </style>
 </head>
 <body style="background-color:Black;">
 <div class="w3-top">
   <div class="navbar">
   <div class="w3-bar w3-black">
-  
+  <div class="topnav" id="myTopnav">
     <center  style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
     <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
     <header class="navigation">
@@ -133,6 +264,7 @@ body, html {
   <li style="padding-top: 30px;"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
   <li style="padding-top: 30px;"><a href="#rules"   class="nav_a">Rules</a></li>
   <li style="padding-top: 30px;"><a href="#about"   class="nav_a">Contact Us</a></li>
+  <li><a href="javascript:void(0);" style="font-size:20px;" class="icon"><span style="cursor:pointer;padding-left:10px;" onclick="openNav()">&#9776;</span></a></li>
   <div class="w3-xlarge w3-section">
   <li class="navlink" >
     <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
@@ -152,6 +284,17 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   </header>
   </div>
 </div>
+</div>
+</div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="head.html">Home</a>
+    <a href="speaker.html">Speakers</a>
+    <a href="Sponsers.html">Sponsers</a>
+    <a href="#">Rules</a>
+    <a href="#">Contact Us</a>
+  </div>
 </div>
 <div class="cont" id="home1" >
    <br><br><br><br><br>
@@ -251,7 +394,23 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:70px;"></a
   <p>&#169 TEDxSNIST</p>
   <p>This independent TEDx event is operated under license from TED</p>
 </footer>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "50%";
+}
 
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 
 </body>
 </html>
