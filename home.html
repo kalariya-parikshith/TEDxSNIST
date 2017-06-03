@@ -114,13 +114,128 @@ h3 {
     }
 }
 
+.topnav {
+  
+}
+
+.topnav a {
+  background-color: transparent;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    padding-top: 29px;
+    float: left;
+    display: inline;
+  }
+  .navbar a {
+  float: left;
+  display: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+li a {
+  background-color: #fff;
+    display: inline;
+    color: #000;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+}
+@media screen and (max-width: 1240px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+
+    position: fixed;
+  }
+  .topnav.responsive a {
+    float: left;
+    display: inline-block;
+    text-align: right;
+    background-color: #000;
+  }
+ 
+
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 </style>
 </head>
 <body style="background-color:Black;">
+  
 <div class="w3-top">
   <div class="navbar">
   <div class="w3-bar w3-black">
-  
+  <div class="topnav" id="myTopnav">
     <center style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
     <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
     <header class="navigation">
@@ -131,6 +246,7 @@ h3 {
   <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
   <li class="navli"><a href="#rules"   class="nav_a">Rules</a></li>
   <li class="navli"><a href="#about"   class="nav_a">Contact Us</a></li>
+  <li><a href="javascript:void(0);" style="font-size:20px;" class="icon"><span style="cursor:pointer;padding-left:10px;" onclick="openNav()">&#9776;</span></a></li>
   <div class="w3-xlarge w3-section">
   <li class="navlink" >
     <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
@@ -151,7 +267,17 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   </div>
 </div>
 </div>
-
+</div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="head.html">Home</a>
+    <a href="speaker.html">Speakers</a>
+    <a href="Sponsers.html">Sponsers</a>
+    <a href="#">Rules</a>
+    <a href="#">Contact Us</a>
+  </div>
+</div>
 <br><br><br><br>
 <div id="home1" >
 <div class="w3-content w3-section" style="max-width:2000px;max-height:500px">
@@ -207,6 +333,13 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:70px;"></a
   <p>This independent TEDx event is operated under license from TED</p>
 </footer>
 <script>
+function openNav() {
+    document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
 var myIndex = 0;
 carousel();
 
@@ -220,6 +353,14 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
+}
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }
 </script>
 
