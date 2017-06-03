@@ -186,15 +186,14 @@ li a {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: black;
     overflow-x: hidden;
     transition: 0.5s;
 }
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 13%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -207,17 +206,20 @@ li a {
     color: #818181;
     display: block;
     transition: 0.3s;
+    background-color: black;
 }
 
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
+    background-color: red;
 }
 
 .overlay .closebtn {
     position: absolute;
     top: 20px;
-    right: 45px;
+    right: 0px;
     font-size: 60px;
+    background-color: transparent;
 }
 
 @media screen and (max-height: 450px) {
@@ -225,7 +227,7 @@ li a {
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
-    right: 35px;
+    right: 10px;
   }
 }
 </style>
@@ -328,7 +330,7 @@ onmouseout="this.src='insta_black.png'" border="0" alt="" style="width:70px;"></
 <a href="https://twitter.com/tedxsnist?s=09"><img src="twit_black.png" onmouseover="this.src='twit_red.png'"
 onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:70px;"></a>
 </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="SNIST GEEKS" target="_blank" class="w3-hover-text-green">SNIST GEEKS</a></p>
+  <p>Powered by <a href="" title="SNIST GEEKS" target="_blank" style="color:green;">SNIST GEEKS</a></p>
   <p>&#169 TEDxSNIST</p>
   <p>This independent TEDx event is operated under license from TED</p>
 </footer>
