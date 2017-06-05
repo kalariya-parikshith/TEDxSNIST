@@ -325,10 +325,19 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     overflow: hidden;
     
 }
+.post-container:hover {
+  background-color: #fff;
+  border: 5px solid red;
+    
+}
 .post-container:hover>.post-content{
+  -webkit-animation:fadi 2s 1;
+  -moz-animation:fadi 2s 1;
   display:block;
 }
 .post-container:hover>.post-content1{
+  -webkit-animation:fadi 2s 1;
+  -moz-animation:fadi 2s 1;
   display:block;
 }
 .post-thumb {
@@ -342,15 +351,18 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 }
 .post-content {
     display:none;
-    margin-left: 210px; 
+    padding-left: 10px;
+    float: left;
 }
 .post-content1 {
     display:none;
+    padding-right:10px; 
     float: right;
 }
 
 .detail{
   font-size: 50px;
+  color: #000;
 }
 </style>
 <div class="cont" id="home1" >
@@ -361,7 +373,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
    <div style="padding-right:250px;padding-left:250px;">
 <div class="post-container">                
     <div class="post-thumb"><img src="img_avatar.png" style="width:250px;"/></div>
-    <div class="post-content">
+    <div class="post-content faidin">
         
         <p class="detail">Name</p></div>
 </div>
