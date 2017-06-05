@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="sty.css">
 <style>
 .cont {
-  background-color: #222;
+  background-color: #000;
 }
 .ig1{
   display: inline;
@@ -14,6 +14,14 @@
 .ig{
   padding-left: 200px;
   display: inline;
+
+}
+.igr{
+  padding-right: 200px;
+  display: inline;
+  padding-left: 200px;
+
+  
 }
 .text {
   background-color: #4CAF50;
@@ -296,35 +304,100 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     <a href="#">Contact Us</a>
   </div>
 </div>
+<style>
+
+.fadein{
+  display: none;
+  -webkit-animation:fadi 1s 1;
+  -moz-animation:fadi 1s 1;
+}
+@-webkit-keyframes fadi{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+@-moz-keyframes fadi{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.post-container {
+    margin: 20px 20px 0 0;  
+    border: 5px solid #aaa;
+    overflow: hidden;
+    
+}
+.post-container:hover>.post-content{
+  display:block;
+}
+.post-container:hover>.post-content1{
+  display:block;
+}
+.post-thumb {
+    float: left;
+}
+.post-thumb1 {
+    float: right;
+}
+.post-thumb img {
+    display: block
+}
+.post-content {
+    display:none;
+    margin-left: 210px; 
+}
+.post-content1 {
+    display:none;
+    float: right;
+}
+
+.detail{
+  font-size: 50px;
+}
+</style>
 <div class="cont" id="home1" >
    <br><br><br><br><br>
    
    <p style="text-align:center;"><span class="sp">Speakers</span></p>
    <br>
-    <div class="ig">
-      <img src="img_avatar.png" class="imgclass">
-   </div>
-   <div class="ig">
-      <img src="img_avatar.png" class="imgclass">
-   </div>
-   <div class="ig">
-      <img src="img_avatar.png" class="imgclass">
-   </div>
+   <div style="padding-right:250px;padding-left:250px;">
+<div class="post-container">                
+    <div class="post-thumb"><img src="img_avatar.png" style="width:250px;"/></div>
+    <div class="post-content">
+        
+        <p class="detail">Name</p></div>
+</div>
+</div>
+<div style="padding-left:250px;padding-right:250px;">
+<div class="post-container">                
+    <div class="post-thumb1"><img src="img_avatar.png" style="width:250px;"/></div>
+    <div class="post-content1">
+        
+        <p class="detail">Name</p></div>
+</div>
+</div><div style="padding-right:250px;padding-left:250px;">
+<div class="post-container">                
+    <div class="post-thumb"><img src="img_avatar.png" style="width:250px;"/></div>
+    <div class="post-content">
+        
+        <p class="detail">Name</p></div>
+</div>
+</div><div style="padding-left:250px;padding-right:250px;">
+<div class="post-container">                
+    <div class="post-thumb1"><img src="img_avatar.png" style="width:250px;"/></div>
+    <div class="post-content1">
+        
+        <p class="detail">Name</p></div>
+</div>
+</div><div style="padding-right:250px;padding-left:250px;">
+<div class="post-container">                
+    <div class="post-thumb"><img src="img_avatar.png" style="width:250px;"/></div>
+    <div class="post-content">
+        
+        <p class="detail">Name</p></div>
+</div>
+</div>
  <br><br><br>
- <div class="ig1">
-  <div style="padding-left:430px;display:inline">
-      <img src="img_avatar.png" class="imgclass">
-   </div>
  </div>
-   <div class="ig1">
-    <div style="padding-left:200px;display:inline; ">
-      <img src="img_avatar.png" class="imgclass">
-   </div>
-   </div>
-   <br><br><br>
-   
-   <br><br><br>
- </div>
+
 <script>
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -410,6 +483,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
 </script>
 
 </body>
