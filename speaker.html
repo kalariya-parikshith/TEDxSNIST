@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="sty.css">
   
-<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <style>
 .cont {
   background-color: #000;
@@ -269,7 +268,7 @@ li a {
     <header class="navigation">
     <nav>
     <ul >
-  <li style="padding-top: 30px;"><a href="head.html" class="nav_a">Home</a></li>
+  <li style="padding-top: 30px;"><a href="home.html" class="nav_a">Home</a></li>
   <li style="padding-top: 30px;"><a href="speaker.html"    class="nav_a">Speaker</a></li>
   <li style="padding-top: 30px;"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
   <li style="padding-top: 30px;"><a href="#rules"   class="nav_a">Rules</a></li>
@@ -299,7 +298,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="head.html">Home</a>
+    <a href="home.html">Home</a>
     <a href="speaker.html">Speakers</a>
     <a href="Sponsers.html">Sponsers</a>
     <a href="#">Rules</a>
@@ -600,41 +599,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-function filterPath(string) {
-    return string
-        .replace(/^\//, '')
-        .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
-        .replace(/\/$/, '');
-}
 
-var locationPath = filterPath(location.pathname);
-$('a[href*="#"]').each(function() {
-    var thisPath = filterPath(this.pathname) || locationPath;
-    var hash = this.hash;
-    if ($("#" + hash.replace(/#/, '')).length) {
-        if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
-            var $target = $(hash),
-                target = this.hash;
-            if (target) {
-                $(this).click(function(event) {
-                    if ($('#animation').prop('checked')) {
-                        event.preventDefault();
-                        $('html,body').animate({scrollTop: $target.offset().top}, 1000, function() {
-                            location.hash = target;
-                            $target.focus();
-                            if ($target.is(":focus")) { //checking if the target was focused
-                                return false;
-                            } else {
-                                $target.attr('tabindex', '-1'); //Adding tabindex for elements not focusable
-                                $target.focus(); //Setting focus
-                            }
-                        });
-                    }
-                });
-            }
-        }
-    }
-});
 </script>
 
 </body>
