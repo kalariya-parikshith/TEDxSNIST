@@ -4,7 +4,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="sty.css">
-  
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <style>
 .cont {
   background-color: #000;
@@ -40,16 +41,7 @@
 .sp:hover{
   border:5px solid white;
 }
-.imgclass{
-  width:250px; 
-  border-radius: 10px; 
-  border:5px solid #fff;
-}
-.imgclass:hover{
-  width:250px; 
-  border-radius: 15px;
-  border:5px solid #fff;
-}
+
 body {margin:0;}
 
 ul {
@@ -138,6 +130,9 @@ h3 {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
+    .plr{
+  padding-right:0px;padding-left:0px;
+}
 }
 
 .topnav {
@@ -166,6 +161,9 @@ h3 {
     float: left;
     display: inline;
   }
+  .plr{
+  padding-right:0px;padding-left:0px;
+}
   .navbar a {
   float: left;
   display: none;
@@ -228,7 +226,7 @@ li a {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -244,18 +242,11 @@ li a {
     position: absolute;
     top: 20px;
     right: 0px;
-    font-size: 60px;
+    font-size: 30px;
     background-color: transparent;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 10px;
-  }
-}
+
 </style>
 </head>
 <body style="background-color:Black;">
@@ -272,7 +263,7 @@ li a {
   <li style="padding-top: 30px;"><a href="speaker.html"    class="nav_a">Speaker</a></li>
   <li style="padding-top: 30px;"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
   <li style="padding-top: 30px;"><a href="#rules"   class="nav_a">Rules</a></li>
-  <li style="padding-top: 30px;"><a href="#about"   class="nav_a">Contact Us</a></li>
+  <li style="padding-top: 30px;"><a href="contact.html"   class="nav_a">Contact Us</a></li>
   <li><a href="javascript:void(0);" style="font-size:20px;" class="icon"><span style="cursor:pointer;padding-left:10px;" onclick="openNav()">&#9776;</span></a></li>
   <div class="w3-xlarge w3-section">
   <li class="navlink" >
@@ -302,7 +293,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     <a href="speaker.html">Speakers</a>
     <a href="Sponsers.html">Sponsers</a>
     <a href="#">Rules</a>
-    <a href="#">Contact Us</a>
+    <a href="contact.html">Contact Us</a>
   </div>
 </div>
 <style>
@@ -321,7 +312,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   100%{opacity: 1;}
 }
 .post-container {
-    margin: 20px 20px 0 0;  
+    margin: 20px 0px 0 0;  
     border: 5px solid #aaa;
     overflow: hidden;
     
@@ -373,7 +364,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 <div class="cont" id="home1" >
    <br><br><br><br><br>
    
-   <p style="text-align:center;"><span class="sp">Speakers</span></p>
+   <p style="text-align:center;" id="home2"><span class="sp" >Speakers</span></p>
    <br>
   <style>
 /* The Modal (background) */
@@ -426,7 +417,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   color: #000;
   font-size: 50px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .10em solid red; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 10 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
@@ -444,7 +435,15 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  20% { border-color: red }
+  10% { border-color: white }
+}
+.plr{
+  padding-right:250px;padding-left:250px;
+}
+@media screen and (max-width: 1240px) {
+  .plr{
+  padding-right:0px;padding-left:0px;
+}
 }
 </style> 
 
@@ -462,7 +461,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 
 </div>
 
-   <div style="padding-right:250px;padding-left:250px;">
+   <div class="plr">
 <div class="post-container">                
     <div class="post-thumb"><img src="img_avatar.png" onmouseover="this.src='img_avt.jpg'"
 onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn"/></div>
@@ -471,7 +470,7 @@ onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn"/></div>
         <p class="typewriter">Name one</p></div>
 </div>
 </div>
-<div style="padding-left:250px;padding-right:250px;">
+<div class="plr">
 <div class="post-container">                
     <div class="post-thumb1"><img src="img_avatar.png" onmouseover="this.src='img_avt.jpg'"
 onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn1"/>
@@ -483,7 +482,7 @@ onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn1"/>
 </div>
 
 
-<div style="padding-right:250px;padding-left:250px;">
+<div class="plr">
 <div class="post-container">                
     <div class="post-thumb"><img src="img_avatar.png" onmouseover="this.src='img_avt.jpg'"
 onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn2"/></div>
@@ -491,7 +490,7 @@ onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn2"/></div>
         
         <p class="typewriter">Name three</p></div>
 </div>
-</div><div style="padding-left:250px;padding-right:250px;">
+</div><div class="plr">
 <div class="post-container">                
     <div class="post-thumb1"><img src="img_avatar.png" onmouseover="this.src='img_avt.jpg'"
 onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn3"/></div>
@@ -499,7 +498,7 @@ onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn3"/></div>
         
         <p class="typewriter">Name four</p></div>
 </div>
-</div><div style="padding-right:250px;padding-left:250px;">
+</div><div class="plr">
 <div class="post-container">                
     <div class="post-thumb"><img src="img_avatar.png" onmouseover="this.src='img_avt.jpg'"
 onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn4"/></div>
@@ -518,7 +517,7 @@ onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn4"/></div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home1" class="w3-button">To the top &#8593;</a>
+  <a href="#home2" class="w3-button w3-light-grey">To the top &#8593;</a>
   <div class="w3-xlarge w3-section">
     <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
 onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:70px;"></a>
@@ -603,4 +602,41 @@ window.onclick = function(event) {
 </script>
 
 </body>
+<script>
+function filterPath(string) {
+    return string
+        .replace(/^\//, '')
+        .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+        .replace(/\/$/, '');
+}
+
+var locationPath = filterPath(location.pathname);
+$('a[href*="#"]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    var hash = this.hash;
+    if ($("#" + hash.replace(/#/, '')).length) {
+        if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
+            var $target = $(hash),
+                target = this.hash;
+            if (target) {
+                $(this).click(function(event) {
+                    if ($('#animation').prop('checked')) {
+                        event.preventDefault();
+                        $('html,body').animate({scrollTop: $target.offset().top}, 1000, function() {
+                            location.hash = target;
+                            $target.focus();
+                            if ($target.is(":focus")) { //checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); //Adding tabindex for elements not focusable
+                                $target.focus(); //Setting focus
+                            }
+                        });
+                    }
+                });
+            }
+        }
+    }
+});
+</script>
 </html>
