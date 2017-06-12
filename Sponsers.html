@@ -126,7 +126,7 @@ body, html {
 .topnav .icon {
   display: none;
 }
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1300px) {
   .topnav a {display: none;}
   .topnav a.icon {
     padding-top: 29px;
@@ -157,7 +157,16 @@ li a {
     text-decoration: none;
 }
 }
-@media screen and (max-width: 1240px) {
+.saii{
+  width:200px;border-radius: 100px;border:5px solid #fff;
+}
+.nsaii1{
+    padding-left:435px;display:inline;
+  }
+  .nsaii2{
+    padding-left:230px;display:inline;
+  }
+@media screen and (max-width: 1300px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
 
@@ -169,8 +178,19 @@ li a {
     text-align: right;
     background-color: #000;
   }
- 
-
+ .nsaii1{
+padding-left: 0px;
+margin-left: 30px;
+ }
+.nsaii2{
+padding-left: 0px;
+margin-left: 30px;
+ }
+ .ig{
+  padding-left: 0px;
+  margin-left: 30px;
+  
+}
 }
 .overlay {
     height: 100%;
@@ -195,7 +215,7 @@ li a {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -211,18 +231,11 @@ li a {
     position: absolute;
     top: 20px;
     right: 0px;
-    font-size: 60px;
+    font-size: 30px;
     background-color: transparent;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 10px;
-  }
-}
+
 
 </style>
 </head>
@@ -240,7 +253,7 @@ li a {
   <li class="navli"><a href="speaker.html"    class="nav_a">Speaker</a></li>
   <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
   <li class="navli"><a href="#rules"   class="nav_a">Rules</a></li>
-  <li class="navli"><a href="#about"   class="nav_a">Contact Us</a></li>
+  <li class="navli"><a href="contact.html"   class="nav_a">Contact Us</a></li>
   <li><a href="javascript:void(0);" style="font-size:20px;" class="icon"><span style="cursor:pointer;padding-left:10px;" onclick="openNav()">&#9776;</span></a></li>
   <div class="w3-xlarge w3-section">
   <li class="navlink" >
@@ -263,6 +276,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 </div>
 </div>
 </div>
+
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -270,87 +284,68 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     <a href="speaker.html">Speakers</a>
     <a href="Sponsers.html">Sponsers</a>
     <a href="#">Rules</a>
-    <a href="#">Contact Us</a>
+    <a href="contact.html">Contact Us</a>
   </div>
 </div>
 <div class="cont" id="home1" >
    <br><br><br><br><br>
-   
+   <style>
+    .igg{
+      display: none;
+
+    }
+    @media screen and (max-width: 1300px) {
+.ig{
+  display: none;
+
+}
+.ig1{
+  display: none;
+
+}
+.igg{
+  display: block;
+}
+
+    }
+   </style>
    <p style="text-align:center;"><span class="sp">Sponsers</span></p>
    <br>
+   <div class="igg">
+      <p style="text-align:center"><img src="img_avatar.png" class="saii"></p>
+   </div><div class="igg">
+      <p style="text-align:center"><img src="img_avatar.png" class="saii"></p>
+   </div><div class="igg">
+      <p style="text-align:center"><img src="img_avatar.png" class="saii"></p>
+   </div><div class="igg">
+      <p style="text-align:center"><img src="img_avatar.png" class="saii"></p>
+   </div><div class="igg">
+      <p style="text-align:center"><img src="img_avatar.png" class="saii"></p>
+   </div>
     <div class="ig">
-      <img src="img_avatar.png" style="width:200px;border-radius: 100px;border:5px solid #fff;">
+      <img src="img_avatar.png" class="saii">
    </div>
    <div class="ig">
-      <img src="img_avatar.png" style="width:200px;border-radius: 100px;border:5px solid #fff;">
+      <img src="img_avatar.png" class="saii">
    </div>
    <div class="ig">
-      <img src="img_avatar.png" style="width:200px;border-radius: 100px;border:5px solid #fff;">
+      <img src="img_avatar.png" class="saii">
    </div>
- <br><br><br>
+ 
  <div class="ig1">
-  <div style="padding-left:435px;display:inline">
-      <img src="img_avatar.png" style="width:200px;border-radius: 100px;border:5px solid #fff;">
+  <div class="nsaii1">
+      <img src="img_avatar.png" class="saii">
    </div>
  </div>
    <div class="ig1">
-    <div style="padding-left:230px;display:inline">
-      <img src="img_avatar.png" style="width:200px;border-radius: 100px;border:5px solid #fff;">
+    <div class="nsaii2">
+      <img src="img_avatar.png" class="saii">
    </div>
    </div>
    <br><br><br>
    
-   <br><br><br>
  </div>
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-var modal1 = document.getElementById('myModal1');
-var modal2 = document.getElementById('myModal2');
-var modal3 = document.getElementById('myModal3');
-var modal4 = document.getElementById('myModal4');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-var btn1 = document.getElementById("myBtn1");
-var btn2 = document.getElementById("myBtn2");
-var btn3 = document.getElementById("myBtn3");
-var btn4 = document.getElementById("myBtn4");
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-btn1.onclick = function() {
-    modal1.style.display = "block";
-}
-btn2.onclick = function() {
-    modal2.style.display = "block";
-}
-btn3.onclick = function() {
-    modal3.style.display = "block";
-}
-btn4.onclick = function() {
-    modal4.style.display = "block";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    else if (event.target == modal1) {
-        modal1.style.display = "none";
-    }
-    else if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-    else if (event.target == modal3) {
-        modal3.style.display = "none";
-    }
-    else if (event.target == modal4) {
-        modal4.style.display = "none";
-    }
-}
 
 </script>
 
@@ -367,7 +362,7 @@ onmouseout="this.src='insta_black.png'" border="0" alt="" style="width:70px;"></
 <a href="https://twitter.com/tedxsnist?s=09"><img src="twit_black.png" onmouseover="this.src='twit_red.png'"
 onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:70px;"></a>
 </div>
- 
+  
   <p>&#169 TEDxSNIST</p>
   <p>This independent TEDx event is operated under license from TED</p>
 </footer>
