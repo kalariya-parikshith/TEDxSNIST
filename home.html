@@ -110,7 +110,6 @@ h3 {
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
     }
 }
 
@@ -202,7 +201,7 @@ li a {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -218,18 +217,11 @@ li a {
     position: absolute;
     top: 20px;
     right: 0px;
-    font-size: 60px;
+    font-size: 30px;
     background-color: transparent;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 10px;
-  }
-}
+
 </style>
 </head>
 <body style="background-color:Black;">
@@ -247,7 +239,7 @@ li a {
   <li class="navli"><a href="speaker.html"    class="nav_a">Speaker</a></li>
   <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
   <li class="navli"><a href="#rules"   class="nav_a">Rules</a></li>
-  <li class="navli"><a href="#about"   class="nav_a">Contact Us</a></li>
+  <li class="navli"><a href="contact.html"   class="nav_a">Contact Us</a></li>
   <li><a href="javascript:void(0);" style="font-size:20px;" class="icon"><span style="cursor:pointer;padding-left:10px;" onclick="openNav()">&#9776;</span></a></li>
   <div class="w3-xlarge w3-section">
   <li class="navlink" >
@@ -277,12 +269,24 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     <a href="speaker.html">Speakers</a>
     <a href="Sponsers.html">Sponsers</a>
     <a href="#">Rules</a>
-    <a href="#">Contact Us</a>
+    <a href="contact.html">Contact Us</a>
   </div>
 </div>
 <br><br><br><br>
 <div id="home1" >
-<div class="w3-content w3-section" style="max-width:2000px;max-height:500px">
+  <style>
+  .slideclass{
+max-width:2000px;max-height:500px;
+  }
+  @media screen and (max-width: 1240px) {
+
+    .slideclass{
+      width: 100%;
+      max-height: 100px;
+    }
+  }
+  </style>
+<div class="w3-content w3-section slideclass">
   
 
   <img class="mySlides w3-animate-fading" src="img_fjords_wide.jpg" style="width:100%;height:600px">
