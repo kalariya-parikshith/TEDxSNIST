@@ -37,7 +37,8 @@ li{
 
 
 .nav_a {
-  padding: 14px 16px;
+  padding: 14px 14px;
+
     display: block;
     color: white;
     text-align: left;
@@ -121,6 +122,7 @@ ul {
     background-color: transparent;
 }
 
+
 li a {
   background-color: #fff;
     display: inline;
@@ -203,15 +205,14 @@ body, html {
 	font-family:tahoma;
 	font-weight:bold;
 	text-align:center;
-	height:530px;
-	width:350px;
-	margin:30px 20px 0px 500px;
+	
 
 }
 
 .submit{
-	margin:15px 0px 0px 30px;
+	margin:15px 0px 0px 0px;
 	height:50px;
+  width: 390px;
 	border-radius:3px;
 	
 }
@@ -225,20 +226,28 @@ body, html {
 }
 
 #submitbutton{
-	margin:15px 0px 0px 80px;
-	background-color:red;
-	border:#5f9ea0;
-	
+		
 	
 }
 
 .desc{
-	margin:15px 0px 0px 30px;
+	margin:15px 0px 0px 0px;
 	height:40px;
-	border-radius:3px;
 	line-height:20px;
-	width:420px;
+	width:390px;
 	height:100px;
+}
+
+nav ul{
+	padding-left:10px;
+}
+@media screen and (max-width: 1240px){
+  .submit{
+    width: 250px;
+  }
+  .desc{
+    width: 250px;
+  }
 }
 
 </style>
@@ -254,9 +263,10 @@ body, html {
     <nav>
     <ul >
   <li class="navli"><a href="home.html" class="nav_a">Home</a></li>
+  <li class="navli"><a href="event.html" class="nav_a">Event</a></li>
   <li class="navli"><a href="speaker.html"    class="nav_a">Speaker</a></li>
   <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
-  <li class="navli"><a href="#rules"   class="nav_a">Rules</a></li>
+  <li class="navli"><a href="aboutus.html"   class="nav_a">About Us</a></li>
   <li class="navli"><a href="contact.html"   class="nav_a">Contact Us</a></li>
   <li><a href="javascript:void(0);" style="font-size:20px;" class="icon"><span style="cursor:pointer;padding-left:10px;" onclick="openNav()">&#9776;</span></a></li>
   <div class="w3-xlarge w3-section">
@@ -284,37 +294,52 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
     <a href="home.html">Home</a>
+    <a href="event.html">Event</a>
     <a href="speaker.html">Speakers</a>
     <a href="Sponsers.html">Sponsers</a>
-    <a href="#">Rules</a>
+    <a href="aboutus.html">About Us</a>
     <a href="contact.html">Contact Us</a>
   </div>
 </div>
 <br><br><br><br><br>
+<style>
+.subm{
+
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #bc3005;
+        border: 0px solid black;
+        text-align: center;
+}
+.subm:hover{
+  background-color: #e53e0b;
+}
+
+</style>
+
 	<center class="mess_text">Message Us Your Ideas/Suggestions</center>
-<div class="inputform">
+<div class="inputform ">
 	
-	<form action="" method="post">
-	<input class="submit" type="text" name="firstname" placeholder="Full Name" required="required" maxlength="20" size="38" />
-	<input class="submit" type="email" name="mail" placeholder="Your Email" required="required" maxlength="30" size="38" />
-	<input class="submit" type="tel" name="mobilenumber" placeholder="Your Mobile Number" required="required" maxlength="20" size="38" />
-	<textarea class="desc" type="text" name="description" required="required" rows="4" cols="62"  placeholder="Your Message" ></textarea>
-	<input class="btn btn-info" id="submitbutton" value="  Submit!  " type="submit" name="submit" />  
+	<form action="user_suggestions.php" method="post">
+	<input class="submit" type="text" name="fullname" placeholder="Full Name" required="required" maxlength="20" size="35" /><br>
+	<input class="submit" type="email" name="mail" placeholder="Your Email" required="required" maxlength="30" size="35" /><br>
+	<input class="submit" type="text" name="mobilenumber" placeholder="Your Mobile Number" required="required" maxlength="20" size="35" /><br>
+	<textarea class="desc" type="text" name="suggestion" required="required"   placeholder="Your Message" ></textarea><br><br>
+	<input class="subm" id="submitbutton" value="  Submit!  " type="submit" name="submit" /> 
+	
 	</form>
+	
+	
+	
+	
+	
 </div>
-	<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home1" class="w3-button w3-light-grey">To the top &#8593;</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
-onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:70px;"></a>
-    <a href="https://www.instagram.com/tedxsnist/"><img src="insta_black.png" onmouseover="this.src='insta_red.png'"
-onmouseout="this.src='insta_black.png'" border="0" alt="" style="width:70px;"></a>
-<a href="https://twitter.com/tedxsnist?s=09"><img src="twit_black.png" onmouseover="this.src='twit_red.png'"
-onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:70px;"></a>
-</div>
-  <p>&#169 TEDxSNIST</p>
-  <p>This independent TEDx event is operated under license from TED</p>
-</footer>
+	<nav class="w3-center w3-black w3-opacity w3-padding-64 w3-hover-opacity-off navbar navbar-default navbar-fixed-bottom">
+  <p>&#169 TEDxSNIST - operated under license from TED</p>
+  <p>Developed by 
+  <font color="red">Parikshith Kalariya </font>and <font color="red"> Sai Lakshmi Yadlapati</font></p>
+	</nav>
 </body>
 <script>
 function openNav() {
