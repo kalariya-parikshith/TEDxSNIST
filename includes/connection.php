@@ -11,7 +11,7 @@
 
 	$con=mysqli_connect("$server", "$user", "$pass", "$db") or die("Connection was not established");
 
-	$app->get('/db/', function() use($app) {
+?*	$app->get('/db/', function() use($app) {
   $st = $app['pdo']->prepare('SELECT name FROM test_table');
   $st->execute();
 
@@ -24,6 +24,6 @@
   return $app['twig']->render('database.twig', array(
     'names' => $names
   ));
-});
+});*/
 
 ?>
