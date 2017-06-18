@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head >
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="sty.css">
+
+<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 100%;
+}
+
+li{
+  padding-top: 10px;
+  float: left;
+}
+
+
+.nav_a {
+  padding: 14px 16px;
+    display: block;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-family:arial;
+    font-size:15px
+}
+
+.nav_a:hover:not(.active) {
+    background-color: red;
+    color: #fff;
+
+}
+.navli{
+  padding-top: 30px;
+}
+.navlink{
+  float: right;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 16px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.cont {
+  background-color: #222;
+}
+.ig1{
+  display: inline;
+}
+.ig{
+  padding-left: 230px;
+  display: inline;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 13px;
+  padding: 16px 32px;
+}
+.sp{
+  border-radius:10px;
+  border:5px solid red;
+  padding:10px;
+  font-size:40px;
+  color:#fff;
+}
+.sp:hover{
+  border:5px solid white;
+}
+.topnav {
+  
+}
+
+.topnav a {
+  background-color: transparent;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    padding-top: 29px;
+    float: left;
+    display: inline;
+  }
+  .navbar a {
+  float: left;
+  display: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+li a {
+  background-color: #fff;
+    display: inline;
+    color: #000;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+}
+.saii{
+  width:200px;height:250px;border-radius: 100px;border:5px solid #fff;
+}
+.nsaii1{
+    padding-left:435px;display:inline;
+  }
+  .nsaii2{
+    padding-left:230px;display:inline;
+  }
+@media screen and (max-width: 1300px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+
+    position: fixed;
+  }
+  .topnav.responsive a {
+    float: left;
+    display: inline-block;
+    text-align: right;
+    background-color: #000;
+  }
+ .nsaii1{
+padding-left: 0px;
+margin-left: 30px;
+ }
+.nsaii2{
+padding-left: 0px;
+margin-left: 30px;
+ }
+ .ig{
+  padding-left: 0px;
+  margin-left: 30px;
+  
+}
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 13%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color: black;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    background-color: red;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+
+
+</style>
+</head>
+<body style="background-color:Black;">
+<div class="w3-top">
+  <div class="navbar">
+  <div class="w3-bar w3-black">
+  <div class="topnav" id="myTopnav">
+    <center  style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
+    <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
+    <header class="navigation">
+    <nav>
+    <ul >
+	<li class="navli"><a href="home.html" class="nav_a">Home</a></li>
+  <li class="navli"><a href="event.html" class="nav_a">Event</a></li>
+  <li class="navli"><a href="speaker.html"  class="nav_a">Speaker</a></li>
+  <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
+  <li class="navli"><a href="aboutus.html"   class="nav_a">About Us</a></li>
+  <li class="navli"><a href="contact.html"   class="nav_a">Contact Us</a></li>
+  <li><a href="javascript:void(0);" style="font-size:20px;" class="icon"><span style="cursor:pointer;padding-left:10px;" onclick="openNav()">&#9776;</span></a></li>
+  <div class="w3-xlarge w3-section">
+  <li class="navlink" >
+    <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
+  </li>
+  <li class="navlink" >
+    <a href="https://www.instagram.com/tedxsnist/"><img src="insta_black.png" onmouseover="this.src='insta_red.png'"
+onmouseout="this.src='insta_black.png'" border="0" alt="" style="width:40px;"></a>
+  </li>
+  <li class="navlink" >
+    <a href="https://twitter.com/tedxsnist?s=09"><img src="twit_black.png" onmouseover="this.src='twit_red.png'"
+onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a>
+  </li>
+</div>
+</ul>
+</nav>
+  </header>
+  </div>
+</div>
+</div>
+</div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html">Home</a>
+	<a href="event.html">Event</a>
+    <a href="speaker.html">Speakers</a>
+    <a href="Sponsers.html">Sponsers</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</div>
+<div class="cont" id="home1" >
+   <br><br><br><br><br>
+   <style>
+    .igg{
+		height:auto;
+		max-width:100%;
+      display:inline;
+	  margin:5%;
+
+    }
+    @media screen and (max-width: 1300px) {
+.ig{
+  height:auto;
+		max-width:100%;
+      display: block;
+
+}
+.ig1{
+  display: none;
+
+}
+.igg{
+  display: block;
+}
+
+ .aboutimg{
+ background-color:white;
+ margin:3%;
+  }
+}  
+ nav ul{
+	padding-left:10px;
+}
+
+   </style>
+   <p style="text-align:center;"><span class="sp">The Team</span></p>
+   <br>
+   <div class="igg">
+      <img src="pranavi.jpg" class="img-responsive saii">
+	  
+   </div>
+   
+   <div class="igg">
+     <img src="virajitha.jpeg" class="img-responsive saii">
+	 
+   </div><div class="igg">
+      <img src="sailakshmi1.jpg" class="img-responsive saii">
+   </div><div class="igg">
+      <img src="parikshith.jpeg" class="img-responsive saii">
+   </div>
+   <div>
+   <span style="margin:7%;color:white;font-family: times new roman;
+	font-style: oblique;
+	font-size: 22px;
+	color:white;
+	font-weight:bold">
+   Pranavi Gundu
+   </span>
+   
+   <span style="margin:7%;color:white;font-family: times new roman;
+	font-style: oblique;
+	font-size: 22px;
+	color:white;
+	font-weight:bold">
+   Virajitha Das
+   </span>
+   <span style="margin:5.5%;color:white;font-family: times new roman;
+	font-style: oblique;
+	font-size: 22px;
+	color:white;
+	font-weight:bold">
+   Sai Lakshmi Yadlapati
+   </span>
+   <span style="margin:4%;color:white;font-family: times new roman;
+	font-style: oblique;
+	font-size: 22px;
+	color:white;
+	font-weight:bold">
+   Parikshith Kalariya
+   </span>
+   </div>
+   <div>
+   <span style="margin:4%;color:white;font-family: times new roman;
+	font-style: oblique;
+	font-size: 22px;
+	color:white;
+	font-weight:bold">
+   Licensee and Organizer
+   </span>
+   
+   <span style="margin:7%;color:white;font-family: times new roman;
+	font-style: oblique;
+	font-size: 22px;
+	color:white;
+	font-weight:bold">
+   Co-Organizer
+   </span>
+   <span style="margin:7%;color:white;font-family: times new roman;
+	font-style: oblique;
+	font-size: 22px;
+	color:white;
+	font-weight:bold">
+	Web Developer
+   </span>
+   <span style="margin:8%;color:white;font-family: times new roman;
+	font-style: oblique;
+	font-size: 22px;
+	color:white;
+	font-weight:bold">
+   Web Developer
+   
+   </span>
+   </div>
+   <div style="background-color:#222;">
+   <span style="margin:9%;">
+   <a href="https://www.facebook.com/profile.php?id=100005171628613"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
+    <a href="https://www.linkedin.com/in/pranavi-gundu-2517a5a3/"><img src="linkedin_black.jpeg" onmouseover="this.src='linkedin_red.jpeg'"
+onmouseout="this.src='linkedin_black.jpeg'" border="0" alt="" style="width:40px;"></a>
+	</span>
+	
+   <span style="margin:9%;">
+   <a href="https://www.facebook.com/virajita.das"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
+    <a href="https://www.linkedin.com/in/virajita"><img src="linkedin_black.jpeg" onmouseover="this.src='linkedin_red.jpeg'"
+onmouseout="this.src='linkedin_black.jpeg'" border="0" alt="" style="width:40px;"></a>
+	</span>
+	
+   <span style="margin:9%;">
+   <a href="https://www.facebook.com/profile.php?id=100004480726307"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
+    <a href="https://in.linkedin.com/in/sai-lakshmi-yadlapati-81bb99120"><img src="linkedin_black.jpeg" onmouseover="this.src='linkedin_red.jpeg'"
+onmouseout="this.src='linkedin_black.jpeg'" border="0" alt="" style="width:40px;"></a>
+	</span>
+   
+   <span style="margin:9%;">
+   <a href="https://www.facebook.com/kalariya.paikshith"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
+    <a href="https://in.linkedin.com/in/kalariya-parikshith-589114120"><img src="linkedin_black.jpeg" onmouseover="this.src='linkedin_red.jpeg'"
+onmouseout="this.src='linkedin_black.jpeg'" border="0" alt="" style="width:40px;"></a>
+	</span>
+  
+	</div>
+ 
+</div>
+
+<!-- Footer -->
+<nav class="w3-center w3-black w3-opacity w3-padding-64 w3-hover-opacity-off navbar navbar-default navbar-fixed-bottom">
+  <p>&#169 TEDxSNIST - operated under license from TED</p>
+  <p>Developed by 
+  <font color="red">Parikshith Kalariya </font>and <font color="red"> Sai Lakshmi Yadlapati</font></p>
+	</nav>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+</body>
+</html>

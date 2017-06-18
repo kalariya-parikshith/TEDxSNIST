@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head >
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="sty.css">
+<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 100%;
+}
+
+li{
+  padding-top: 10px;
+  float: left;
+}
+
+
+.nav_a {
+  padding: 14px 16px;
+    display: block;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-family:arial;
+    font-size:15px
+}
+
+.nav_a:hover:not(.active) {
+    background-color: red;
+    color: #fff;
+
+}
+.navli{
+  padding-top: 30px;
+}
+.navlink{
+  float: right;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 16px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.bgimg-1,.bgimg-2{
+  position: relative;
+  opacity: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("whatisted5.jpg");
+  min-height: 70%;
+}
+.bgimg-2 {
+  background-image: url("snist2.jpeg");
+  min-height: 100%;
+}
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.topnav {
+  
+}
+
+.topnav a {
+  background-color: transparent;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    padding-top: 29px;
+    float: left;
+    display: inline;
+  }
+  .navbar a {
+  float: left;
+  display: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+li a {
+  background-color: #fff;
+    display: inline;
+    color: #000;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+}
+@media screen and (max-width: 1240px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+
+    position: fixed;
+  }
+  .topnav.responsive a {
+    float: left;
+    display: inline-block;
+    text-align: right;
+    background-color: #000;
+  }
+ 
+
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 13%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color: black;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    background-color: red;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-size: 60px;
+    background-color: transparent;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 10px;
+  }
+}
+nav ul{
+	padding-left:10px;
+}
+
+
+</style>
+</head>
+<body style="background-color:Black;">
+  
+<div class="w3-top">
+  <div class="navbar">
+  <div class="w3-bar w3-black">
+  <div class="topnav" id="myTopnav">
+    <center style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
+    <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
+    <header class="navigation">
+    <nav>
+    <ul >
+  <li class="navli"><a href="home.html" class="nav_a">Home</a></li>
+  <li class="navli"><a href="event.html" class="nav_a">Event</a></li>
+  <li class="navli"><a href="speaker.html"  class="nav_a">Speaker</a></li>
+  <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
+  <li class="navli"><a href="aboutus.html"   class="nav_a">About Us</a></li>
+  <li class="navli"><a href="contact.html"   class="nav_a">Contact Us</a></li>
+  <li><a href="javascript:void(0);" style="font-size:20px;" class="icon"><span style="cursor:pointer;padding-left:10px;" onclick="openNav()">&#9776;</span></a></li>
+  <div class="w3-xlarge w3-section">
+  <li class="navlink" >
+    <a href="https://www.facebook.com/tedxsnist/"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
+onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
+  </li>
+  <li class="navlink" >
+    <a href="https://www.instagram.com/tedxsnist/"><img src="insta_black.png" onmouseover="this.src='insta_red.png'"
+onmouseout="this.src='insta_black.png'" border="0" alt="" style="width:40px;"></a>
+  </li>
+  <li class="navlink" >
+    <a href="https://twitter.com/tedxsnist?s=09"><img src="twit_black.png" onmouseover="this.src='twit_red.png'"
+onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a>
+  </li>
+</div>
+</ul>
+</nav>
+  </header>
+  </div>
+</div>
+</div>
+</div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html">Home</a>
+	<a href="event.html">Event</a>
+    <a href="speaker.html">Speakers</a>
+    <a href="Sponsers.html">Sponsers</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</div>
+<br><br><br><br>
+<div id="home1" >
+<div class="w3-content w3-section" style="max-width:2000px;max-height:500px">
+  
+	
+  <img class="mySlides w3-animate-fading" src="tedxsnistaugust.jpg" style="width:90%;height:500px;margin-left:auto;margin-right:auto">
+  <img class="mySlides w3-animate-fading" src="tedxsnistoffbeat.jpg" style="width:65%;height:500px;margin-left:auto;margin-right:auto">
+  
+  
+</div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;color:black">
+  <h3 style="text-align:center;font-size:35px;color:red">THEME</h3>
+  <p style="font-size:18px;">It's simple to follow the crowd, but it takes the audacity to be outlandish and to redefine the conventions. Celebrating the offbeat for an unusual tomorrow.</p>
+  <div class="inputform">
+  <center>
+  <form action="application.php" method="get">
+  <input id="submitbutton" class="btn btn-danger btn btn-primary btn-lg" type="submit" name="submit" value="Apply to attend!"/>
+  </form>
+  </center>
+   
+  </div>
+</div>
+
+
+</div>
+</div>
+<!-- Footer -->
+<nav class="w3-center w3-black w3-opacity w3-padding-64 w3-hover-opacity-off navbar navbar-default navbar-fixed-bottom">
+  <p>&#169 TEDxSNIST - operated under license from TED</p>
+  <p>Developed by 
+  <font color="red">Parikshith Kalariya </font>and <font color="red"> Sai Lakshmi Yadlapati</font></p>
+	</nav>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>
