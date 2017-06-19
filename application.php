@@ -243,6 +243,21 @@ body, html {
 	width:420px;
 	height:100px;
 }
+.sp{
+  border-radius:10px;
+  border:5px solid red;
+  padding:10px;
+  font-size:40px;
+  color:white;
+}
+.sp:hover{
+  border:5px solid white;
+}
+
+nav ul{
+	padding-left:10px;
+}
+
 
 </style>
 </head>
@@ -294,10 +309,12 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     <a href="contact.html">Contact Us</a>
   </div>
 </div>
-<br><br><br><br><br>
-	<div style="color: #777;background-color:white;text-align:center;padding:40px 80px;text-align: justify;color:black">
-  <h3 style="text-align:center;font-size:30px;color:black">Registrations will be open soon.<br><br>Stay tuned!!<br><br></h3>
-  <center><img src="tedxwhiteposter.png" style="margin-top:20px;"/></center>
+<br><br><br><br>
+	<div style="color: #777;background-color:#222;text-align:center;padding:30px 80px;text-align: justify;color:black">
+<p style="text-align:center;"><span class="sp">Registration</span></p>
+   <br>
+  <h3 style="text-align:center;font-size:30px;color:white">Registrations will be open soon.<br><br>Stay tuned!!<br><br></h3>
+  
   
 </div>
 <!--

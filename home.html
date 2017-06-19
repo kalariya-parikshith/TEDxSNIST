@@ -6,23 +6,19 @@
   <link rel="stylesheet" href="sty.css">
 <style>
 body {margin:0;}
-
 ul {
     list-style-type: none;
     margin: 0;
     overflow: auto;
     position: fixed;
-    top: 0;
+    
     width: 100%;
     opacity: 100%;
 }
-
 li{
   padding-top: 10px;
-  float: left;
+  
 }
-
-
 .nav_a {
   padding: 14px 16px;
     display: block;
@@ -32,14 +28,13 @@ li{
     font-family:arial;
     font-size:15px
 }
-
 .nav_a:hover:not(.active) {
     background-color: red;
     color: #fff;
-
 }
 .navli{
   padding-top: 30px;
+  float: left;
 }
 .navlink{
   float: right;
@@ -72,7 +67,6 @@ body, html {
   top: 0;
   width: 100%;
 }
-
 .navbar a {
   float: left;
   display: block;
@@ -88,7 +82,6 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .bgimg-1 {
   background-image: url("whatisted5.jpg");
@@ -98,26 +91,21 @@ body, html {
   background-image: url("snist6.jpg");
   min-height: 100%;
 }
-
-
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
 }
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
 }
-
 .topnav {
   
 }
-
 .topnav a {
   background-color: transparent;
   float: left;
@@ -127,9 +115,6 @@ h3 {
   padding: 10px 15px;
   text-decoration: none;
 }
-
-
-
 .topnav .icon {
   display: none;
 }
@@ -155,7 +140,6 @@ ul {
     width: 100%;
     background-color: transparent;
 }
-
 li a {
   background-color: #fff;
     display: inline;
@@ -167,7 +151,6 @@ li a {
 @media screen and (max-width: 1240px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-
     position: fixed;
   }
   .topnav.responsive a {
@@ -177,7 +160,6 @@ li a {
     background-color: #000;
   }
  
-
 }
 .overlay {
     height: 100%;
@@ -190,7 +172,6 @@ li a {
     overflow-x: hidden;
     transition: 0.5s;
 }
-
 .overlay-content {
     position: relative;
     top: 13%;
@@ -198,37 +179,25 @@ li a {
     text-align: center;
     margin-top: 30px;
 }
-
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
     background-color: black;
 }
-
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
     background-color: red;
 }
-
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 0px;
-    font-size: 60px;
+    font-size: 30px;
     background-color: transparent;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 10px;
-  }
 }
 nav ul{
 	padding-left:10px;
@@ -248,7 +217,7 @@ nav ul{
     <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
     <header class="navigation">
     <nav>
-    <ul >
+    <ul style="top:0;">
   <li class="navli"><a href="home.html" class="nav_a activated">Home</a></li>
   <li class="navli"><a href="event.html" class="nav_a">Event</a></li>
   <li class="navli"><a href="speaker.html"  class="nav_a">Speaker</a></li>
@@ -289,23 +258,132 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   </div>
 </div>
 <br><br><br><br>
+<style>
+.navbarb {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.navbarb a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: red;
+}
+.navlic{
+  float: center;
+}
+.subm{
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #bc3005;
+        border: 0px solid black;
+        margin-right: 28px;
+}
+.subm:hover{
+  background-color: #e53e0b;
+}
+@media screen and (max-width: 1240px){
+  .subm{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+</style>
+<!--<div class="w3-top">
+<div class="navbarb">
+  
+  <ul style="bottom:0;">
+  <li><a href="home.html" class="subm">buy tickets before <span id="demo"></span></a></li>
+  
+</ul>
+</div>
+</div>-->
+ <style>
+ [class^="img"] {
+    display: inline-block;
+    
+}
+[class^="img"] img {
+    display: block;
+}
+  .slideclass{
+max-width:100%;
+  }
+  .imgsty1{
+width:100%;height:600px;
+  }
+  .imgsty2{
+    width:100%;height:600px;margin-left:auto;margin-right:auto
+  }
+  @media screen and (max-width: 1240px) {
+    .slideclass{
+      width: 100%;
+      height: 50%;
+    }
+    .imgsty1{
+width:50%;height:200px;
+  }
+  .imgsty2{
+    width:100%;height:200px;margin-left:auto;margin-right:auto
+  }
+  }
+  
+  </style>
 <div id="home1" >
-<div class="w3-content w3-section" style="max-width:2000px;max-height:500px">
+<div class="w3-content w3-section slideclass">
   
 
-  <img class="mySlides w3-animate-fading" src="tedxposter.png" style="width:100%;height:500px">
-  <img class="mySlides w3-animate-fading" src="snist4.jpg" style="width:90%;height:600px;margin-left:auto;margin-right:auto">
+  <img class="mySlides w3-animate-fading imgsty1" src="tedxposter.png">
+  <img class="mySlides w3-animate-fading imgsty2" src="snist4.jpg">
   
   
 </div>
 </div>
 
-<br><br><br>
+<style>
+  .dv{
+    color: #000;text-align:center;text-align: justify;
+  }
+  .h33{
+text-align:center;padding:70px 0px;font-size:50px;color:red;
+  }
+  .pp{
+    padding:0px 100px;font-size:20px;color:white;
+  }
+  .dv1{
+    color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;color:black;
+  }
+  .h333{
+    text-align:center;font-size:35px;color:red;
+  }
+  @media screen and (max-width: 1200px){
+   
+  .h33{padding:10px 10px;font-size:40px;
+  }
+  .pp{
+    padding:10px 15px;font-size:15px;
+  }
+  .dv1{
+    padding:10px 10px;
+  }
+  .h333{
+    font-size:35px;
+  }
+  }
+</style>
+
 <div style="background-color:white;">
 <div  class="bgimg-1">
-  <div style="color: #000;text-align:center;text-align: justify;">
-  <h3 style="text-align:center;padding:70px 100px;font-size:50px;color:red">What is TED?</h3>
-  <p style="padding:0px 100px;font-size:20px;color:white">TED is a non-profit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The annual TED Conference takes place each spring in Vancouver, British Columbia.<br>
+  <div class="dv">
+  <h3 class="h33">What is TED?</h3>
+  <p class="pp">TED is a non-profit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The annual TED Conference takes place each spring in Vancouver, British Columbia.<br>
 	  TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani,Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
 
 
@@ -314,16 +392,39 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 </div>
 </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;color:black">
-  <h3 style="text-align:center;font-size:35px;color:red">What is TED<sup style="font-size:23px">x</sup>?</h3>
-  <p><center style="font-size:20px">x=independently organized event.</center></p>
+<div class="dv1">
+  <h3 class="h333">What is TED<sup style="font-size:23px">x</sup>?</h3>
+  <center style="font-size:20px">x=independently organized event.</center>
   <p style="font-size:18px;">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. </p>
 </div>
-
+<style>
+.dv2{
+  text-align:center;text-align: justify;color: #cee;
+}
+.h32{
+  text-align:center;padding:70px 100px;font-size:50px;color:white;color:red
+}
+.p2{
+  padding:0px 100px;font-size:20px;color:white
+}
+.su{
+  font-size:30px
+}
+@media screen and (max-width: 1200px){
+  .h32{padding:50px 0px;font-size:30px;
+}
+.p2{
+  padding:0px 10px;font-size:15px;
+}
+.su{
+  font-size: 20px;
+}
+}
+</style>
 <div class="bgimg-2">
-  <div style="text-align:center;text-align: justify;color: #cee;">
-  <h3 style="text-align:center;padding:70px 100px;font-size:50px;color:white;color:red">What is TED<sup style="font-size:30px">x</sup>SNIST?</h3>
-  <p style="padding:0px 100px;font-size:20px;color:white"> At our event TEDxSNIST, the videos of TED talks will combine with speakers on live,to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.<br>
+  <div class="dv2">
+  <h3 class="h32">What is TED<sup class="su">x</sup>SNIST?</h3>
+  <p class="p2"> At our event TEDxSNIST, the videos of TED talks will combine with speakers on live,to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.<br>
 	  <center><a href="https://www.ted.com/tedx/events/23395">Glimpse of our event in ted.com</a> </center>
 
 </p>
@@ -340,20 +441,47 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   <p>&#169 TEDxSNIST</p>
   <p>This independent TEDx event is operated under license from TED</p>
   <p>Developed by 
-  <font color="red">Parikshith Kalariya </font>and <font color="red"> Sai Lakshmi Yadlapati</font></p>
+  <font color="red">Parikshith Kalariya<br> </font>and <font color="red"> Sai Lakshmi Yadlapati</font></p>
 </nav>
 </div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 5, 2017 15:37:25").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
 <script>
 function openNav() {
     document.getElementById("myNav").style.width = "50%";
 }
-
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 var myIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");

@@ -1,23 +1,5 @@
-<?php
-include("includes/connection.php");
-if (isset($_POST['submit'])){
-			global $con;
-			$fullname = mysqli_real_escape_string($con,$_POST['fullname']);
-			$mail = mysqli_real_escape_string($con,$_POST['mail']);
-			$mobile =  mysqli_real_escape_string($con,$_POST['mobilenumber']);
-			$suggestion = mysqli_real_escape_string($con,$_POST['suggestion']);
-			$insert = "insert into contactform(fullname, email, mobile, suggestion) values('$fullname','$mail','$mobile','$suggestion')";
-			
-			$run_insert = mysqli_query($con,$insert);
-					
-			if($run_insert){
-					echo "Thank You For Contacting Us <br>";
-					}
-}
 
-			
-?>
-<html>
+Thank You For Contacting Us <br><html>
 <head >
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -259,6 +241,17 @@ body, html {
 	height:100px;
 }
 
+.sp{
+  border-radius:10px;
+  border:5px solid red;
+  padding:10px;
+  font-size:40px;
+  color:white;
+}
+.sp:hover{
+  border:5px solid white;
+}
+
 nav ul{
 	padding-left:10px;
 }
@@ -314,9 +307,8 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   </div>
 </div>
 <br><br><br><br><br>
-	<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;color:black">
-  <h3 style="text-align:center;font-size:35px;">Thank You For Contacting Us!<br></h3>
-  <center><img src="tedxwhiteposter.png" style="margin-top:20px;"/></center>
+	<div style="color: #777;background-color:#222;text-align:center;padding:30px 80px;text-align: justify;color:black">
+  <h3 style="text-align:center;font-size:30px;color:white">Your response has been registered.<br><br>Thank You for Contacting Us!!<br><br></h3>
   
 </div>
 
