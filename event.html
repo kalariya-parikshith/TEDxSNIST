@@ -3,7 +3,6 @@
 <head >
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="sty.css">
 <style>
 body {margin:0;}
@@ -203,7 +202,7 @@ li a {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -219,18 +218,11 @@ li a {
     position: absolute;
     top: 20px;
     right: 0px;
-    font-size: 60px;
+    font-size: 30px;
     background-color: transparent;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 10px;
-  }
-}
+
 nav ul{
 	padding-left:10px;
 }
@@ -292,9 +284,9 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 <div id="home1" >
 <div class="w3-content w3-section" style="max-width:2000px;max-height:500px">
   
-	<img class="mySlides w3-animate-fading" src="offbeattedx.jpeg" style="width:65%;height:500px;margin-left:auto;margin-right:auto">
-  <img class="mySlides w3-animate-fading" src="offbeatwhite.jpeg" style="width:90%;height:500px;margin-left:auto;margin-right:auto">
-  
+	
+  <img class="mySlides w3-animate-fading" src="offbeattedx.jpeg" style="width:90%;height:500px;margin-left:auto;margin-right:auto">
+  <img class="mySlides w3-animate-fading" src="offbeatwhite.jpeg" style="width:65%;height:500px;margin-left:auto;margin-right:auto">
   
   
 </div>
@@ -305,8 +297,16 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   <p style="font-size:18px;">It's simple to follow the crowd, but it takes the audacity to be outlandish and to redefine the conventions. Celebrating the offbeat for an unusual tomorrow.</p>
   <div class="inputform">
   <center>
+    <style>
+      .aply{
+        padding: 10px;
+        border-radius: 7px;
+        color: #fff;
+        background-color: #bc3005;
+      }
+    </style>
   <form action="application.php" method="get">
-  <input id="submitbutton" class="btn btn-danger btn btn-primary btn-lg" type="submit" name="submit" value="Apply to attend!"/>
+  <input id="submitbutton" class="aply" type="submit" name="submit" value="Apply to attend!"/>
   </form>
   </center>
    

@@ -3,7 +3,6 @@
 <head >
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="sty.css">
 <style>
 @font-face {
@@ -206,15 +205,14 @@ body, html {
 	font-family:tahoma;
 	font-weight:bold;
 	text-align:center;
-	height:530px;
-	width:350px;
-	margin:30px 20px 0px 35%;
+	
 
 }
 
 .submit{
-	margin:15px 0px 0px 30px;
+	margin:15px 0px 0px 0px;
 	height:50px;
+  width: 390px;
 	border-radius:3px;
 	
 }
@@ -228,13 +226,12 @@ body, html {
 }
 
 #submitbutton{
-	margin:15px 0px 0px 80px;
 		
 	
 }
 
 .desc{
-	margin:15px 0px 0px 30px;
+	margin:15px 0px 0px 0px;
 	height:40px;
 	line-height:20px;
 	width:390px;
@@ -243,6 +240,14 @@ body, html {
 
 nav ul{
 	padding-left:10px;
+}
+@media screen and (max-width: 1240px){
+  .submit{
+    width: 250px;
+  }
+  .desc{
+    width: 250px;
+  }
 }
 
 </style>
@@ -289,6 +294,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
     <a href="home.html">Home</a>
+    <a href="event.html">Event</a>
     <a href="speaker.html">Speakers</a>
     <a href="Sponsers.html">Sponsers</a>
     <a href="aboutus.html">About Us</a>
@@ -296,15 +302,31 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   </div>
 </div>
 <br><br><br><br><br>
+<style>
+.subm{
+
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #bc3005;
+        border: 0px solid black;
+        text-align: center;
+}
+.subm:hover{
+  background-color: #e53e0b;
+}
+
+</style>
+
 	<center class="mess_text">Message Us Your Ideas/Suggestions</center>
-<div class="inputform form-group">
+<div class="inputform ">
 	
 	<form action="user_suggestions.php" method="post">
-	<input class="submit" type="text" name="fullname" placeholder="Full Name" required="required" maxlength="20" size="38" />
-	<input class="submit" type="email" name="mail" placeholder="Your Email" required="required" maxlength="30" size="38" />
-	<input class="submit" type="text" name="mobilenumber" placeholder="Your Mobile Number" required="required" maxlength="20" size="38" />
-	<textarea class="desc form-control" type="text" name="suggestion" required="required" rows="4" cols="50"  placeholder="Your Message" ></textarea>
-	<input class="btn btn-danger btn btn-primary btn-lg" id="submitbutton" value="  Submit!  " type="submit" name="submit" /> 
+	<input class="submit" type="text" name="fullname" placeholder="Full Name" required="required" maxlength="20" size="35" /><br>
+	<input class="submit" type="email" name="mail" placeholder="Your Email" required="required" maxlength="30" size="35" /><br>
+	<input class="submit" type="text" name="mobilenumber" placeholder="Your Mobile Number" required="required" maxlength="20" size="35" /><br>
+	<textarea class="desc" type="text" name="suggestion" required="required"   placeholder="Your Message" ></textarea><br><br>
+	<input class="subm" id="submitbutton" value="  Submit!  " type="submit" name="submit" /> 
 	
 	</form>
 	
