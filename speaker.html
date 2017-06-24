@@ -390,17 +390,12 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 }
 /* The Close Button */
 .close {
-    color: #ddd;
+    color: #000;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
+
 .typewriter {
   color: #fff;
   font-size: 50px;
@@ -448,7 +443,8 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   <!-- Modal content -->
 
   <div class="modal-content">
-    <h3 id="head_name">This is head<span class="close">&times;</span></h3>
+    <a href="" class="close">&times;</a>
+    <h3 id="head_name">This is head</h3>
 
     <p id="head_details">Some text in the Modal..</p>
   </div>
