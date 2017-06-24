@@ -311,9 +311,9 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     border: 5px solid #aaa;
     overflow: hidden;
 
+
 }
 .post-container:hover {
-  background-color: #fff;
   border: 5px solid red;
 
 }
@@ -348,7 +348,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 }
 .detail{
   font-size: 50px;
-  color: #000;
+  color: #fff;
 }
 #home1{
   transiton:2s;
@@ -402,7 +402,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     cursor: pointer;
 }
 .typewriter {
-  color: #000;
+  color: #fff;
   font-size: 50px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .10em solid red; /* The typwriter cursor */
@@ -431,6 +431,14 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   padding-right:0px;padding-left:0px;
 }
 }
+.post-container:hover>.des{
+  display:none;
+}
+.des{
+  font-size: 50px;
+  color: white;
+  padding-top: 50px;
+}
 </style>
 
 
@@ -449,11 +457,12 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 
    <div class="plr">
 <div class="post-container">
-    <div class="post-thumb"><img src="img_avatar.png" onmouseover="this.src='img_avt.jpg'"
-onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn"/></div>
+    <div class="post-thumb"><img src="srinidhi.jpg" onmouseover="this.src='srinidhi1.jpg'"
+onmouseout="this.src='srinidhi.jpg'" style="width:250px;" id="myBtn"/></div>
+<div class="des"> &#160 Why should you Listen?</div>
     <div class="post-content faidin">
 
-        <p class="typewriter">Name one</p></div>
+        <p class="typewriter">SRINIDHI DASAKA</p></div>
 </div>
 </div>
 <!-- <div class="plr">
@@ -543,8 +552,8 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal
 btn.onclick = function() {
-  document.getElementById("head_name").innerHTML="Name1";
-  document.getElementById("head_details").innerHTML="details of person";
+  document.getElementById("head_name").innerHTML="SRINIDHI DASAKA";
+  document.getElementById("head_details").innerHTML="A social media evangelist, a digital initiative deviser as she calls herself, Srinidhi Dasaka is a dedicated HR Professional, who lives by the motto- &#39;You live only once, but if you do it right, once is enough.&#39; Being a self taught artist and mentor, she&#39;ll be talking about creating and utilizing opportunities and also how small changes can lead to big realization of goals in one&#39;s life. She says, &quot;When an opportunity doesn&#39;t knock at your door, you walk up to it,&quot; giving insights into her goals and her journey of life.";
     modal.style.display = "block";
 }
 // btn1.onclick = function() {
