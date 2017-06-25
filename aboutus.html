@@ -337,25 +337,49 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
       position: absolute;
       z-index: 99;
   }
-
+  .mark{
+    margin-left:100px;margin-right:100px;
+  }
+  .inv1{
+    display: none;
+  }
+@media screen and (max-width:1200px) {
+  .mark{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .inv{
+    display: none;
+  }
+  .inv1{
+    display: block;
+  }
+}
 </style>
-<table width="60%" align="center">
+<table width="60%" align="center" class="inv">
   <tr>
     <th><img src="pranavi2.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Organiser & Licensee<br>Pranavi Gundu</span></th>
     <th><img src="virajitha.jpeg" class="ot"/><br><span style="font-size:25px;color:white;">Co-organiser<br>Virajitha Das</span></th>
   </tr>
 </table>
-
+<div class="inv1">
+<center><img src="pranavi2.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Organiser & Licensee<br>Pranavi Gundu</span><br><br></center>
+<center><img src="virajitha.jpeg" class="ot"/><br><span style="font-size:25px;color:white;">Co-organiser<br>Virajitha Das</span></center>
+</div>
 <p style="text-align:center;"><span class="sp" >Mentors</span></p>
-<table width="60%" align="center">
+<table width="60%" align="center" class="inv">
   <tr>
     <th><img src="surender_reddy.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Surender reddy sir</span></th>
     <th><img src="Ravi_memon.png" class="ot"/><br><span style="font-size:25px;color:white;">Ravi menon sir</span></th>
   </tr>
 </table>
+<div class="inv1">
+<center><img src="surender_reddy.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Surender reddy sir</span></center>
+<center><img src="Ravi_memon.png" class="ot"/><br><span style="font-size:25px;color:white;">Ravi menon sir</span></center>
+</div>
 <br>
 <p style="text-align:center;"><span class="sp" >Our Team</span></p><br>
-<div style="margin-left:100px;margin-right:100px;"><marquee SCROLLAMOUNT=20 onmouseover="this.stop();" onmouseout="this.start();">
+<div class="mark"><marquee SCROLLAMOUNT=20 onmouseover="this.stop();" onmouseout="this.start();">
 
   <a href="" title="Vidya Madhuri Kalluri" class="tooltip"><img src="cw_vidya_madhuri_kalluri.jpg" title="" class="ot"/></a>
   &ensp;&ensp;&ensp;<a href="" title="Simran Makandar" class="tooltip"><img src="cw_simran_makandar.jpg" title=""  class="ot"/></a>
