@@ -4,44 +4,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="sty.css">
-
-<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <style>
-.cont {
-  background-color: #000;
-}
-.ig1{
-  display: inline;
-}
-.ig{
-  padding-left: 200px;
-  display: inline;
-
-}
-.igr{
-  padding-right: 200px;
-  display: inline;
-  padding-left: 200px;
-
-  
-}
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 13px;
-  padding: 16px 32px;
-}
-.sp{
-  border-radius:10px;
-  border:5px solid red;
-  padding:10px;
-  font-size:40px;
-  color:white;
-}
-.sp:hover{
-  border:5px solid white;
-}
-
 body {margin:0;}
 
 ul {
@@ -49,14 +12,14 @@ ul {
     margin: 0;
     overflow: auto;
     position: fixed;
-    top: 0;
+
     width: 100%;
     opacity: 100%;
 }
 
 li{
   padding-top: 10px;
-  float: left;
+
 }
 
 
@@ -77,6 +40,7 @@ li{
 }
 .navli{
   padding-top: 30px;
+  float: left;
 }
 .navlink{
   float: right;
@@ -118,6 +82,25 @@ body, html {
   padding: 10px 15px;
   text-decoration: none;
 }
+.bgimg-1,.bgimg-2{
+  position: relative;
+  opacity: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("ted_gif_800px_-07s.gif");
+  min-height: 70%;
+}
+.bgimg-2 {
+  background-image: url("snist6.jpg");
+  min-height: 100%;
+}
+
+
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -130,13 +113,10 @@ h3 {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
-    .plr{
-  padding-right:0px;padding-left:0px;
-}
 }
 
 .topnav {
-  
+
 }
 
 .topnav a {
@@ -161,9 +141,6 @@ h3 {
     float: left;
     display: inline;
   }
-  .plr{
-  padding-right:0px;padding-left:0px;
-}
   .navbar a {
   float: left;
   display: none;
@@ -200,7 +177,7 @@ li a {
     text-align: right;
     background-color: #000;
   }
- 
+
 
 }
 .overlay {
@@ -244,27 +221,44 @@ li a {
     right: 0px;
     font-size: 30px;
     background-color: transparent;
+
 }
 
-
+nav ul{
+	padding-left:10px;
+}
+.activated{
+	background-color:red;
+}
+.sp{
+  border-radius:10px;
+  border:5px solid red;
+  padding:10px;
+  font-size:40px;
+  color:#fff;
+}
+.sp:hover{
+  border:5px solid white;
+}
 </style>
 </head>
 <body style="background-color:Black;">
+
 <div class="w3-top">
   <div class="navbar">
   <div class="w3-bar w3-black">
   <div class="topnav" id="myTopnav">
-    <center  style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
+    <center style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
     <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
     <header class="navigation">
     <nav>
-    <ul >
-  <li style="padding-top: 30px;"><a href="home.html" class="nav_a">Home</a></li>
-  <li style="padding-top: 30px;"><a href="event.html" class="nav_a">Event</a></li>
-  <li style="padding-top: 30px;"><a href="speaker.html"    class="nav_a">Speaker</a></li>
-  <li style="padding-top: 30px;"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
-  <li style="padding-top: 30px;"><a href="aboutus.html"   class="nav_a">About Us</a></li>
-  <li style="padding-top: 30px;"><a href="contact.html"   class="nav_a">Contact Us</a></li>
+    <ul style="top:0;">
+  <li class="navli"><a href="home.html" class="nav_a activated">Home</a></li>
+  <li class="navli"><a href="event.html" class="nav_a">Event</a></li>
+  <li class="navli"><a href="speaker.html"  class="nav_a">Speakers</a></li>
+  <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
+  <li class="navli"><a href="aboutus.html"   class="nav_a">About Us</a></li>
+  <li class="navli"><a href="contact.html"   class="nav_a">Contact Us</a></li>
   <li><a href="javascript:void(0);" style="font-size:20px;" class="icon"><span style="cursor:pointer;padding-left:10px;" onclick="openNav()">&#9776;</span></a></li>
   <div class="w3-xlarge w3-section">
   <li class="navlink" >
@@ -299,7 +293,6 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   </div>
 </div>
 <style>
-
 .fadein{
   display: none;
   -webkit-animation:fadi 1s 1;
@@ -314,15 +307,15 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   100%{opacity: 1;}
 }
 .post-container {
-    margin: 20px 0px 0 0;  
+    margin: 20px 0px 0 0;
     border: 5px solid #aaa;
     overflow: hidden;
-    
+
+
 }
 .post-container:hover {
-  background-color: #fff;
   border: 5px solid red;
-    
+
 }
 .post-container:hover>.post-content{
   -webkit-animation:fadi 2s 1;
@@ -350,23 +343,22 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 }
 .post-content1 {
     display:none;
-    padding-right:10px; 
+    padding-right:10px;
     float: right;
 }
-
 .detail{
   font-size: 50px;
-  color: #000;
+  color: #fff;
 }
 #home1{
   transiton:2s;
 }
-
 </style>
 <div class="cont" id="home1" >
    <br><br><br><br><br>
-   
-   
+
+   <p style="text-align:center;" id="home2"><span class="sp" >Speakers</span></p>
+   <br>
   <style>
 /* The Modal (background) */
 .modal {
@@ -382,7 +374,6 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
 .modal-content {
       -webkit-animation:fadi 2s ease-out;
@@ -396,43 +387,32 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     color: white;
     border-radius: 10px;
     text-align:center;
-
 }
-
 /* The Close Button */
 .close {
-    color: #ddd;
+    color: #000;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .typewriter {
-  color: #000;
+  color: #fff;
   font-size: 50px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .10em solid red; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 10 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
-  animation: 
+  animation:
     typing 1s steps(30, end),
     blink-caret .5s step-end ;
 }
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
-
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -446,12 +426,49 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
   padding-right:0px;padding-left:0px;
 }
 }
-
-nav ul{
-	padding-left:10px;
+.post-container:hover>.des{
+  display:none;
 }
+.des{
+  font-size: 50px;
+  color: white;
+  padding-top: 50px;
+}
+.gg{
+  width:250px;
+}
+@media screen and (max-width:820px){
+  .des{
+    display: none;
+  }.gg{
+    border:5px solid #fff;
+  }
+  .post-container{
+    margin-left: 20%;
+    border: 0px;
+  }
+  .post-container:hover{
+    border: 0px;
+  }
+  .post-container:hover>.post-content{
+    display:none;
+  }
+  .post-container1{
+    margin-left: 20%;
+    border: 0px;
+  }
+  .post-container1:hover{
+    border: 0px;
+  }
+  .post-container1:hover>.post-content1{
+    display:none;
+  }
+  .modal{
+    padding-top: 100px;
+  }
 
-</style> 
+}
+</style>
 
 
 <!-- The Modal -->
@@ -459,81 +476,90 @@ nav ul{
 
   <!-- Modal content -->
 
-  
+  <div class="modal-content">
+    <a href="" class="close">&times;</a>
+    <h3 id="head_name">This is head</h3>
+
+    <p id="head_details">Some text in the Modal..</p>
+  </div>
+
+</div>
+
+   <div class="plr">
+<div class="post-container">
+    <div class="post-thumb"><img src="srinidhi.jpg" onmouseover="this.src='srinidhi1.jpg'"
+onmouseout="this.src='srinidhi.jpg'" class="gg" id="myBtn"/></div>
+	
+<div class="des"><h2 style="font-size:35px;text-align:center;color:white;">This August<br>At TED<sup>x</sup>SNIST</h2></div>
+    <div class="post-content faidin">
+
+        <p class="typewriter">SRINIDHI DASAKA</p></div>
+		
+</div>
+</div>
+<div class="plr">
+<div class="post-container">
+    <div class="post-thumb1"><img src="devyanikarbanda.jpg" onmouseover="this.src='devyanikarbanda1.jpg'"
+onmouseout="this.src='devyanikarbanda.jpg'" style="width:250px;" id="myBtn1"/>
+    </div>
+	<div class="des"><h2 style="font-size:35px;text-align:center;color:white;">This August<br>At TED<sup>x</sup>SNIST</h2></div>
+    <div class="post-content1 faidin">
+        <p class="typewriter">DEVYANI KARBANDA</p>
+    </div>
+</div>
 </div>
 <!--
-   <div class="plr">
-<div class="post-container">                
-    <div class="post-thumb"><img src="pranavi.jpg" onmouseover="this.src='pranavi.jpg'"
-onmouseout="this.src='pranavi.jpg'" style="width:200px; height:220px;" id="myBtn"/></div>
-    <div class="post-content faidin">
-     
-        <p class="typewriter">Pranavi, Organizer</p></div>
-</div>
-</div>
 <div class="plr">
-<div class="post-container">                
-    <div class="post-thumb1"><img src="virajitha.jpeg" onmouseover="this.src='virajitha.jpeg'"
-onmouseout="this.src='virajitha.jpeg'" style="width:200px;height:220px;" id="myBtn1"/>
-    </div>
-    <div class="post-content1 faidin">
-        <p class="typewriter">Virajitha, Co-Organizer</p>
-    </div>
-</div>
-</div>
-
-
-<div class="plr">
-<div class="post-container">                
-    <div class="post-thumb"><img src="parikshith.jpeg" onmouseover="this.src='parikshith.jpeg'"
-onmouseout="this.src='parikshith.jpeg'" style="width:200px;height:220px;" id="myBtn2"/></div>
+<div class="post-container">
+    <div class="post-thumb"><img src="img_avatar.png" onmouseover="this.src='img_avt.jpg'"
+onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn2"/></div>
     <div class="post-content">
-        
-        <p class="typewriter">Parikshith, Web Developer</p></div>
+
+        <p class="typewriter">Name three</p></div>
 </div>
 </div><div class="plr">
-<div class="post-container">                
-    <div class="post-thumb1"><img src="sailakshmi1.jpg" onmouseover="this.src='sailakshmi1.jpg'"
-onmouseout="this.src='sailakshmi1.jpg'" style="width:200px;height:220px;" id="myBtn3"/></div>
+<div class="post-container">
+    <div class="post-thumb1"><img src="img_avatar.png" onmouseover="this.src='img_avt.jpg'"
+onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn3"/></div>
     <div class="post-content1">
-        
-        <p class="typewriter">Sai Lakshmi, Web Developer</p></div>
+
+        <p class="typewriter">Name four</p></div>
 </div>
 </div><div class="plr">
-<div class="post-container">                
+<div class="post-container">
     <div class="post-thumb"><img src="img_avatar.png" onmouseover="this.src='img_avt.jpg'"
 onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn4"/></div>
     <div class="post-content">
-        
+
         <p class="typewriter">Name five</p></div>
 </div>
-</div>
-
--->
- 
- <div style="color: #777;background-color:#222;text-align:center;padding:30px 80px;text-align: justify;color:black">
-<p style="text-align:center;"><span class="sp">Speakers</span></p>
-   <br>
-  <h3 style="text-align:center;font-size:30px;color:white">Will update soon.<br><br>Stay tuned!!<br><br></h3>
-  
-  
-</div>
+</div> -->
+<br>
+<h1 style="text-align:center;">Other speakers will be updated soon!!</h1>
+ <br>
  </div>
 
 
 </div>
 
+
+
 <!-- Footer -->
-<nav class="w3-center w3-black w3-opacity w3-padding-64 w3-hover-opacity-off navbar navbar-default navbar-fixed-bottom">
-  <p>&#169 TEDxSNIST - operated under license from TED</p>
-  <p>Developed by 
-  <font color="red">Parikshith Kalariya </font>and <font color="red"> Sai Lakshmi Yadlapati</font></p>
-	</nav>
+<div class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+<nav class="navbar navbar-default navbar-fixed-bottom" style="background-color:black">
+
+  <p>&#169 TEDxSNIST</p>
+  <p>This independent TEDx event is operated under license from TED</p>
+  <p>Developed by
+  <font color="red">Parikshith Kalariya<br> </font>and <font color="red"> Sai Lakshmi Yadlapati</font></p>
+</nav>
+</div>
+
 <script>
 function openNav() {
     document.getElementById("myNav").style.width = "50%";
 }
-
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
@@ -545,97 +571,51 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
-
 // Get the modal
 var modal = document.getElementById('myModal');
-
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var btn1 = document.getElementById("myBtn1");
-var btn2 = document.getElementById("myBtn2");
-var btn3 = document.getElementById("myBtn3");
-var btn4 = document.getElementById("myBtn4");
-
+// var btn2 = document.getElementById("myBtn2");
+// var btn3 = document.getElementById("myBtn3");
+// var btn4 = document.getElementById("myBtn4");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
-  document.getElementById("head_name").innerHTML="Name1";
-  document.getElementById("head_details").innerHTML="details of person";
+  document.getElementById("head_name").innerHTML="SRINIDHI DASAKA";
+  document.getElementById("head_details").innerHTML="A social media evangelist, a digital initiative deviser as she calls herself, Srinidhi Dasaka is a dedicated HR Professional, who lives by the motto- &#39;You live only once, but if you do it right, once is enough.&#39; Being a self taught artist and mentor, she&#39;ll be talking about creating and utilizing opportunities and also how small changes can lead to big realization of goals in one&#39;s life. She says, &quot;When an opportunity doesn&#39;t knock at your door, you walk up to it,&quot; giving insights into her goals and her journey of life.";
     modal.style.display = "block";
 }
-btn1.onclick = function() {
-  document.getElementById("head_name").innerHTML="Name2";
-  document.getElementById("head_details").innerHTML="details of person";
+ btn1.onclick = function() {
+ document.getElementById("head_name").innerHTML="Devyani Karbanda";
+ document.getElementById("head_details").innerHTML="A graduate from Pearl Academy of fashion in fashion designing, Devyani Kharbandha is an aspiring fashion designer whose primary inspiration was the concept of Indian weddings. Fabric designing was always her interest as she says, making her keen to learn new techniques from her mom, who ignited this passion into her. She's a learned classical dancer which talks a lot about the artistic talents imbibed in her, for which she credits her family. \"It is my endeavour to be as creative as I can and make best out of waste material,\" says Devyani, giving insights into her thought process for sustainable and economical fashion designing, and also her collection Raunaq.";
     modal.style.display = "block";
-}
-btn2.onclick = function() {
-  document.getElementById("head_name").innerHTML="Name3";
-  document.getElementById("head_details").innerHTML="details of person";
-    modal.style.display = "block";
-}
-btn3.onclick = function() {
-  document.getElementById("head_name").innerHTML="Name3";
-  document.getElementById("head_details").innerHTML="details of person";
-    modal.style.display = "block";
-}
-btn4.onclick = function() {
-  document.getElementById("head_name").innerHTML="Name3";
-  document.getElementById("head_details").innerHTML="details of person";
-    modal.style.display = "block";
-}
+ }
+// btn2.onclick = function() {
+//   document.getElementById("head_name").innerHTML="Name3";
+//   document.getElementById("head_details").innerHTML="details of person";
+//     modal.style.display = "block";
+// }
+// btn3.onclick = function() {
+//   document.getElementById("head_name").innerHTML="Name3";
+//   document.getElementById("head_details").innerHTML="details of person";
+//     modal.style.display = "block";
+// }
+// btn4.onclick = function() {
+//   document.getElementById("head_name").innerHTML="Name3";
+//   document.getElementById("head_details").innerHTML="details of person";
+//     modal.style.display = "block";
+// }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
-
-</script>
-
+}</script>
 </body>
-<script>
-function filterPath(string) {
-    return string
-        .replace(/^\//, '')
-        .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
-        .replace(/\/$/, '');
-}
-
-var locationPath = filterPath(location.pathname);
-$('a[href*="#"]').each(function() {
-    var thisPath = filterPath(this.pathname) || locationPath;
-    var hash = this.hash;
-    if ($("#" + hash.replace(/#/, '')).length) {
-        if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
-            var $target = $(hash),
-                target = this.hash;
-            if (target) {
-                $(this).click(function(event) {
-                    if ($('#animation').prop('checked')) {
-                        event.preventDefault();
-                        $('html,body').animate({scrollTop: $target.offset().top}, 1000, function() {
-                            location.hash = target;
-                            $target.focus();
-                            if ($target.is(":focus")) { //checking if the target was focused
-                                return false;
-                            } else {
-                                $target.attr('tabindex', '-1'); //Adding tabindex for elements not focusable
-                                $target.focus(); //Setting focus
-                            }
-                        });
-                    }
-                });
-            }
-        }
-    }
-});
-</script>
 </html>

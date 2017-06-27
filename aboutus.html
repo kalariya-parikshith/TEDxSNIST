@@ -3,23 +3,26 @@
 <head >
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="sty.css">
-
+  <link rel="stylesheet" href="sty.css">
 <style>
 body {margin:0;}
+
 ul {
     list-style-type: none;
     margin: 0;
     overflow: auto;
     position: fixed;
-    top: 0;
+
     width: 100%;
     opacity: 100%;
 }
+
 li{
   padding-top: 10px;
-  float: left;
+
 }
+
+
 .nav_a {
   padding: 14px 16px;
     display: block;
@@ -29,12 +32,15 @@ li{
     font-family:arial;
     font-size:15px
 }
+
 .nav_a:hover:not(.active) {
     background-color: red;
     color: #fff;
+
 }
 .navli{
   padding-top: 30px;
+  float: left;
 }
 .navlink{
   float: right;
@@ -67,6 +73,7 @@ body, html {
   top: 0;
   width: 100%;
 }
+
 .navbar a {
   float: left;
   display: block;
@@ -75,35 +82,43 @@ body, html {
   padding: 10px 15px;
   text-decoration: none;
 }
-.cont {
-  background-color: #222;
+.bgimg-1,.bgimg-2{
+  position: relative;
+  opacity: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
-.ig1{
-  display: inline;
+.bgimg-1 {
+  background-image: url("ted_gif_800px_-07s.gif");
+  min-height: 70%;
 }
-.ig{
-  padding-left: 230px;
-  display: inline;
+.bgimg-2 {
+  background-image: url("snist6.jpg");
+  min-height: 100%;
 }
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 13px;
-  padding: 16px 32px;
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
 }
-.sp{
-  border-radius:10px;
-  border:5px solid red;
-  padding:10px;
-  font-size:40px;
-  color:#fff;
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
-.sp:hover{
-  border:5px solid white;
-}
+
 .topnav {
-  
+
 }
+
 .topnav a {
   background-color: transparent;
   float: left;
@@ -113,10 +128,13 @@ body, html {
   padding: 10px 15px;
   text-decoration: none;
 }
+
+
+
 .topnav .icon {
   display: none;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1240px) {
   .topnav a {display: none;}
   .topnav a.icon {
     padding-top: 29px;
@@ -138,6 +156,7 @@ ul {
     width: 100%;
     background-color: transparent;
 }
+
 li a {
   background-color: #fff;
     display: inline;
@@ -146,18 +165,10 @@ li a {
     text-decoration: none;
 }
 }
-.saii{
-  width:200px;height:250px;border-radius: 100px;border:5px solid #fff;display:block;margin:0%;
-}
-.nsaii1{
-    padding-left:435px;display:inline;
-  }
-  .nsaii2{
-    padding-left:230px;display:inline;
-  }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1240px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
+
     position: fixed;
   }
   .topnav.responsive a {
@@ -166,19 +177,8 @@ li a {
     text-align: right;
     background-color: #000;
   }
- .nsaii1{
-padding-left: 0px;
-margin-left: 30px;
- }
-.nsaii2{
-padding-left: 0px;
-margin-left: 30px;
- }
- .ig{
-  padding-left: 0px;
-  margin-left: 30px;
-  
-}
+
+
 }
 .overlay {
     height: 100%;
@@ -191,6 +191,7 @@ margin-left: 30px;
     overflow-x: hidden;
     transition: 0.5s;
 }
+
 .overlay-content {
     position: relative;
     top: 13%;
@@ -198,6 +199,7 @@ margin-left: 30px;
     text-align: center;
     margin-top: 30px;
 }
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -207,32 +209,53 @@ margin-left: 30px;
     transition: 0.3s;
     background-color: black;
 }
+
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
     background-color: red;
 }
+
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 0px;
     font-size: 30px;
     background-color: transparent;
+
+}
+
+nav ul{
+	padding-left:10px;
+}
+.activated{
+	background-color:red;
+}
+.sp{
+  border-radius:10px;
+  border:5px solid red;
+  padding:10px;
+  font-size:40px;
+  color:#fff;
+}
+.sp:hover{
+  border:5px solid white;
 }
 </style>
 </head>
 <body style="background-color:Black;">
+
 <div class="w3-top">
   <div class="navbar">
   <div class="w3-bar w3-black">
   <div class="topnav" id="myTopnav">
-    <center  style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
+    <center style="color:#fff;font-family:arial;font-size:50px;vertical-align:center"><span style="color:red"><b>TED</b></span><sup style="font-size:35px;color:red"><b>x</b></sup>SNIST</center>
     <center style="color:#fff;font-family:arial"><sup><sup><sup style="font-size:15px;"><span style="color:red">x </span>= independently organized TED event</sup></sup></sup></center>
     <header class="navigation">
     <nav>
-    <ul >
-	<li class="navli"><a href="home.html" class="nav_a">Home</a></li>
+    <ul style="top:0;">
+  <li class="navli"><a href="home.html" class="nav_a activated">Home</a></li>
   <li class="navli"><a href="event.html" class="nav_a">Event</a></li>
-  <li class="navli"><a href="speaker.html"  class="nav_a">Speaker</a></li>
+  <li class="navli"><a href="speaker.html"  class="nav_a">Speakers</a></li>
   <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
   <li class="navli"><a href="aboutus.html"   class="nav_a">About Us</a></li>
   <li class="navli"><a href="contact.html"   class="nav_a">Contact Us</a></li>
@@ -258,7 +281,6 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 </div>
 </div>
 </div>
-
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -272,152 +294,165 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 </div>
 <div class="cont" id="home1" >
    <br><br><br><br><br>
-   <style>
-.igg{
-height:auto;
-display:inline-block;
-margin-left:4%;
-margin-right:4%;
-}
-    @media screen and (max-width: 1300px) {
 
-.ig1{
-  display: none;
-}
-
- .aboutimg{
- background-color:white;
- margin:3%;
-  }
-}  
- nav ul{
-	padding-left:10px;
-}
-   </style>
-   <p style="text-align:center;"><span class="sp">The Team</span></p>
+   <p style="text-align:center;" id="home2"><span class="sp" >Organisers</span></p>
    <br>
-   <div class="igg">
-    <img src="pranavi.jpeg" class="saii">
-	<span style="margin-left:12%;color:white;font-family: times new roman;
-	font-style: oblique;
-	font-size: 22px;
-	color:white;
-	font-weight:bold;
-	display:block;">
-   Pranavi Gundu
-   </span>
-   <span style="margin-left:0%;color:white;font-family: times new roman;
-	font-style: oblique;
-	font-size: 22px;
-	color:white;
-	font-weight:bold;
-	display:block;">
-   Licensee and Organizer
-   </span>
-   <span style="margin-left:25%;">
-   <a href="https://www.facebook.com/profile.php?id=100005171628613"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
-onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
-    <a href="https://www.linkedin.com/in/pranavi-gundu-2517a5a3/"><img src="linkedin_black.png" onmouseover="this.src='linkedin_red.jpeg'"
-onmouseout="this.src='linkedin_black.png'" border="0" alt="" style="width:40px;"></a>
-	</span>
-   </div>
-   <div class="igg">
-    <img src="virajitha.jpeg" class="saii">
-	<span style="margin-left:24%;color:white;font-family: times new roman;
-	font-style: oblique;
-	font-size: 22px;
-	color:white;
-	font-weight:bold;
-	display:block;">
-   Virajita Das
-   </span>
-   <span style="margin-left:20%;color:white;font-family: times new roman;
-	font-style: oblique;
-	font-size: 22px;
-	color:white;
-	font-weight:bold;
-	display:block;">
-   Co-Organizer
-   </span>
-   <span style="margin-left:27%;">
-   <a href="https://www.facebook.com/virajita.das"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
-onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
-    <a href="https://www.linkedin.com/in/virajita"><img src="linkedin_black.png" onmouseover="this.src='linkedin_red.jpeg'"
-onmouseout="this.src='linkedin_black.png'" border="0" alt="" style="width:40px;"></a>
-	</span>
-   </div>
-   <div class="igg">
-    <img src="sailakshmi1.jpg" class="saii">
-	<span style="margin-left:2px;color:white;font-family: times new roman;
-	font-style: oblique;
-	font-size: 22px;
-	color:white;
-	font-weight:bold;
-	display:block;">
-   Sai Lakshmi Yadlapati
-   </span>
-   <span style="margin-left:10%;color:white;font-family: times new roman;
-	font-style: oblique;
-	font-size: 22px;
-	color:white;
-	font-weight:bold;
-	display:block;">
-   Web Site Developer
-   </span>
-   <span style="margin:27%;">
-   <a href="https://www.facebook.com/profile.php?id=100004480726307"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
-onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
-    <a href="https://in.linkedin.com/in/sai-lakshmi-yadlapati-81bb99120"><img src="linkedin_black.png" onmouseover="this.src='linkedin_red.jpeg'"
-onmouseout="this.src='linkedin_black.png'" border="0" alt="" style="width:40px;"></a>
-	</span>
-   </div>
-   
-   <div class="igg">
-    <img src="parikshith.jpeg" class="saii">
-	<span style="margin-left:2px;color:white;font-family: times new roman;
-	font-style: oblique;
-	font-size: 22px;
-	color:white;
-	font-weight:bold;
-	display:block;">
-   Parikshith Kalariya
-   </span>
-   <span style="margin-left:5%;color:white;font-family: times new roman;
-	font-style: oblique;
-	font-size: 22px;
-	color:white;
-	font-weight:bold;
-	display:block;">
-   Web Site Developer
-   </span>
-   <span style="margin:27%;">
-   <a href="https://www.facebook.com/kalariya.paikshith"><img src="fb_black.png" onmouseover="this.src='fb_red.png'"
-onmouseout="this.src='fb_black.png'" border="0" alt="" style="width:40px;"></a>
-    <a href="https://in.linkedin.com/in/kalariya-parikshith-589114120"><img src="linkedin_black.png" onmouseover="this.src='linkedin_red.jpeg'"
-onmouseout="this.src='linkedin_black.png'" border="0" alt="" style="width:40px;"></a>
-	</span>
-   </div>
-	
+ </div>
+<style>
+.ot{
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  border: 5px solid white;
+}
+.ot:hover{
+  border: 5px solid red;
+}
+.tooltip{
+      display: inline;
+      position: relative;
+  }
 
+  .tooltip:hover:after{
+      background: #333;
+      background: rgba(0,0,0,.8);
+      border-radius: 5px;
+      bottom: 26px;
+      color: #fff;
+      content: attr(title);
+      left: 10%;
+      padding: 5px 10px;
+      position: absolute;
+      z-index: 98;
+      width: auto;
+  }
 
+  .tooltip:hover:before{
+      border: solid;
+      border-color: #333 transparent;
+      border-width: 6px 6px 0 6px;
+      bottom: 20px;
+      content: "";
+      left: 50%;
+      position: absolute;
+      z-index: 99;
+  }
+  .mark{
+    margin-left:100px;margin-right:100px;
+  }
+  .inv1{
+    display: none;
+  }
+@media screen and (max-width:1200px) {
+  .mark{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .inv{
+    display: none;
+  }
+  .inv1{
+    display: block;
+  }
+}
+</style>
+<table width="60%" align="center" class="inv">
+  <tr>
+    <th><img src="pranavi2.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Organiser & Licensee<br>Pranavi Gundu</span></th>
+    <th><img src="virajitha.jpeg" class="ot"/><br><span style="font-size:25px;color:white;">Co-organiser<br>Virajitha Das</span></th>
+    <th><img src="veer.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Speaker Curator<br>Veerender Singh</span></th>
+  </tr>
+</table>
+<div class="inv1">
+<center><img src="pranavi2.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Organiser & Licensee<br>Pranavi Gundu</span><br><br></center>
+<center><img src="virajitha.jpeg" class="ot"/><br><span style="font-size:25px;color:white;">Co-organiser<br>Virajitha Das</span></center>
+<center><img src="veer.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Speaker Curator<br>Veerender Singh</span></center>
+</div>
+<p style="text-align:center;"><span class="sp" >Mentors</span></p>
+<table width="60%" align="center" class="inv">
+  <tr>
+    <th><img src="surender_reddy.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Surender reddy sir</span></th>
+    <th><img src="Ravi_memon.png" class="ot"/><br><span style="font-size:25px;color:white;">Ravi menon sir</span></th>
+  </tr>
+</table>
+<div class="inv1">
+<center><img src="surender_reddy.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Surender Reddy</span></center>
+<center><img src="Ravi_memon.png" class="ot"/><br><span style="font-size:25px;color:white;">Ravi Menon</span></center>
+</div>
+<br>
+<p style="text-align:center;"><span class="sp" >Our Team</span></p><br>
+<div class="mark"><marquee SCROLLAMOUNT=20 onmouseover="this.stop();" onmouseout="this.start();">
 
+  <a href="" title="Vidya Madhuri Kalluri" class="tooltip"><img src="cw_vidya_madhuri_kalluri.jpg" title="" class="ot"/></a>
+  &ensp;&ensp;&ensp;<a href="" title="Simran Makandar" class="tooltip"><img src="cw_simran_makandar.jpg" title=""  class="ot"/></a>
+&ensp;&ensp;&ensp;<a href="" title="Saphal Kumar Thammu" class="tooltip"><img src="L_saphal_kumar_thammu.jpg" title="" class="ot tooltip"/></a>
+&ensp;&ensp;&ensp;<a href="" title="Parikshith Kalariya" class="tooltip"><img src="parikshith.jpeg" class="ot" title=""/></a>
+&ensp;&ensp;&ensp;<a href="" title="Sai Lakshmi Yadlapati" class="tooltip"><img src="sailakshmi1.jpg" class="ot"  title="" /></a>
+&ensp;&ensp;&ensp;<a href="" title="P Sharon Ritika" class="tooltip"><img src="L_p_sharon_ritika.jpg"  title="" class="ot"/></a>
+&ensp;&ensp;&ensp;<a href="" title="K Sai Tanya" class="tooltip"><img src="sai_tanya.jpg"  title="" class="ot"/></a>
+&ensp;&ensp;&ensp;<a href="" title="Yashwanth Mergu" class="tooltip"><img src="L_yashwanth_mergu.jpg" title=""  class="ot"/></a>
+&ensp;&ensp;&ensp;<a href="" title="Spandana Reddy" class="tooltip"><img src="cw_spandana_reddy.jpg" title=""  class="ot"/></a>
+&ensp;&ensp;&ensp;<a href="" title="Yashwanth Kuncha" class="tooltip"><img src="ss&em_yashwanth_kuncha.jpg" title=" "  class="ot"/></a>
+&ensp;&ensp;&ensp;<a href="" title="Mudhiraj Harshith" class="tooltip"><img src="harshith_mudhiraj (2).jpg" title=""  class="ot"/></a>
+&ensp;&ensp;&ensp;<a href="" title="Karthik Dontha" class="tooltip"><img src="OR_karthik_dontha.jpg"  title="" class="ot"/></a>
+</marquee></div><!--
+<table width="80%" align="center">
+  <marquee><tr>
+    <th><img src="L_saphal_kumar_thammu.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Saphal kumar thammu<br></span></th>
+    <th><img src="L_yashwanth_mergu.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Yashwanth mergu<br></span></th>
+    <th><img src="sailakshmi1.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Sai Lakshmi Yadlapati</span><br></th>
+    <th><img src="parikshith.jpeg" class="ot"/><br><span style="font-size:25px;color:white;">Parikshith Kalariya</span><br></th>
+  </tr></marquee>
+</table>
+<table width="80%" align="center">
+  <tr>
+    <th><img src="cw_simran_makandar.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Simran makandar</span></th>
+    <th><img src="cw_spandana_reddy.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Spandana reddy</span></th>
+    <th><img src="cw_vidya_madhuri_kalluri.jpg" class="ot"/><br><span style="font-size:23px;color:white;">Vidya madhuri kalluri</span></th>
+    <th><img src="L_p_sharon_ritika.jpg" class="ot"/><br><span style="font-size:25px;color:white;">P Sharon ritika</span></th>
+  </tr>
+</table>
+<table width="80%" align="center">
+  <tr>
+    <th><img src="OR_karthik_dontha.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Karthik dontha</span></th>
+    <th><img src="ss&em_yashwanth_kuncha.jpg" class="ot"/><br><span style="font-size:25px;color:white;">Yashwanth kuncha</span></th>
+    <th><img src="d&sm_k_sai_tanya.jpg" class="ot"/><br><span style="font-size:25px;color:white;">K sai tanya</span></th>
 
-	
-    
+  </tr>
+</table>-->
+<!-- Footer -->
+<div class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+<nav class="navbar navbar-default navbar-fixed-bottom" style="background-color:black">
+
+  <p>&#169 TEDxSNIST</p>
+  <p>This independent TEDx event is operated under license from TED</p>
+  <p>Developed by
+  <font color="red">Parikshith Kalariya<br> </font>and <font color="red"> Sai Lakshmi Yadlapati</font></p>
+</nav>
 </div>
 
-<!-- Footer -->
-<nav class="w3-center w3-black w3-opacity w3-padding-64 w3-hover-opacity-off navbar navbar-default navbar-fixed-bottom">
-  <p>&#169 TEDxSNIST - operated under license from TED</p>
-  <p>Developed by 
-  <font color="red">Parikshith Kalariya </font>and <font color="red"> Sai Lakshmi Yadlapati</font></p>
-	</nav>
 <script>
 function openNav() {
     document.getElementById("myNav").style.width = "50%";
 }
+
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+}
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
 }
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -427,6 +462,6 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+</script>
 </body>
 </html>
-Contact GitHub
