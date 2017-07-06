@@ -255,7 +255,7 @@ nav ul{
     <ul style="top:0;">
   <li class="navli"><a href="home.html" class="nav_a activated">Home</a></li>
   <li class="navli"><a href="event.html" class="nav_a">Event</a></li>
-  <li class="navli"><a href="speaker.html"  class="nav_a">Speaker</a></li>
+  <li class="navli"><a href="speaker.html"  class="nav_a">Speakers</a></li>
   <li class="navli"><a href="Sponsers.html" class="nav_a">Sponsors</a></li>
   <li class="navli"><a href="aboutus.html"   class="nav_a">About Us</a></li>
   <li class="navli"><a href="contact.html"   class="nav_a">Contact Us</a></li>
@@ -292,6 +292,7 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
     <a href="contact.html">Contact Us</a>
   </div>
 </div>
+
 <style>
 .fadein{
   display: none;
@@ -353,7 +354,61 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 #home1{
   transiton:2s;
 }
-</style>
+.navbarb {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .navbarb a {
+    float: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 15px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-decoration: none;
+    background-color: red;
+  }
+  .navlic{
+    float: center;
+  }
+  .subm{
+
+          padding: 10px;
+          border-radius: 5px;
+          color: #fff;
+          background-color: #bc3005;
+          border: 0px solid black;
+          margin-right: 28px;
+
+  }
+  .subm:hover{
+    background-color: #e53e0b;
+  }
+  @media screen and (max-width: 1240px){
+    .subm{
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .navbarb a {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  </style>
+  <div class="w3-top">
+  <div class="navbarb">
+
+    <ul style="bottom:0;">
+    <li><a href="" class="subm">Click on the speaker's picture to know their profile <span id="demo"></span></a></li>
+
+  </ul>
+  </div>
+  </div>
 <div class="cont" id="home1" >
    <br><br><br><br><br>
 
