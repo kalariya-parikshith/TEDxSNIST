@@ -552,6 +552,16 @@ onmouseout="this.src='twit_black.png'" border="0" alt="" style="width:40px;"></a
 
 </div>
 <div class="comc">
+<div class="plr">
+<div class="post-container">
+ <div class="post-thumb"><img src="venkat.jpg" onmouseover="this.src='venkat1.jpg'"
+onmouseout="this.src='venkat.jpg'" class="gg" id="myBtn5"/></div>
+<center class="des"><div >This August<br>At TedxSnist</div></center>
+ <div class="post-content faidin">
+
+     <p class="typewriter">Venkat Narayana Murthy</p></div>
+</div>
+</div>
    <div class="plr">
 <div class="post-container">
     <div class="post-thumb"><img src="srinidhi.jpg" onmouseover="this.src='srinidhi1.jpg'"
@@ -576,6 +586,7 @@ onmouseout="this.src='IMG-20170626-WA0009.jpg'" class="gg" id="myBtn1"/></div>
 
 
 <div class="plr">
+
 <div class="post-container">
  <div class="post-thumb"><img src="devyanikarbanda.jpg" onmouseover="this.src='devyanikarbanda1.jpg'"
 onmouseout="this.src='devyanikarbanda.jpg'" class="gg" id="myBtn2"/></div>
@@ -607,6 +618,7 @@ onmouseout="this.src='vaishali.jpg'" class="gg" id="myBtn4"/></div>
      <p class="typewriter">Vaishali Neotia</p></div>
 </div>
 </div>
+
 </div>
 <!--
 <div class="plr">
@@ -635,6 +647,8 @@ onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn4"/></div>
 </div>
 </div> -->
 <div class="mobc">
+<center><img src="venkat.jpg" onmouseover="this.src='venkat1.jpg'"
+onmouseout="this.src='venkat.jpg'" class="gg" id="myBtnn5"/></center>
   <center><img src="srinidhi.jpg" onmouseover="this.src='srinidhi1.jpg'"
 onmouseout="this.src='srinidhi.jpg'" class="gg" id="myBtnn"/></center><br>
 <!-- <center><img src="IMG-20170626-WA0009.jpg" onmouseover="this.src='PicsArt_06-27-10.42.18.jpg'"
@@ -645,6 +659,7 @@ onmouseout="this.src='devyanikarbanda.jpg'" class="gg" id="myBtnn2"/></center><b
 onmouseout="this.src='bhargav.jpg'" class="gg" id="myBtnn3"/></center><br>
 <center><img src="vaishali.jpg" onmouseover="this.src='vaishali1.jpg'"
 onmouseout="this.src='vaishali.jpg'" class="gg" id="myBtnn4"/></center>
+
 
 </div>
 
@@ -695,8 +710,10 @@ var btnn = document.getElementById("myBtnn");
 var btnn2 = document.getElementById("myBtnn2");
 var btn3 = document.getElementById("myBtn3");
 var btn4 = document.getElementById("myBtn4");
+var btn5 = document.getElementById("myBtn5");
 var btnn3 = document.getElementById("myBtnn3");
 var btnn4 = document.getElementById("myBtnn4");
+var btnn5 = document.getElementById("myBtnn5");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal
@@ -725,6 +742,11 @@ btn4.onclick  = function() {
   document.getElementById("head_details").innerHTML="A successful entrepreneur and engineer, Vaishali Neotia is the CEO and co-founder of the largest, virtual reality and augmented reality company Merxius, which has been featured in well known newspapers such as Deccan Chronicle, The Hindu, TOI, CNBC etc. Merxius also received honors from IBM etc. Being an alumnus of Indian School of Business and Goldman  Sachs 10000 women and Stanford Graduate School of Business, she was a revolutionist and also mentored for initiatives such as Girls in tech, US Exchange Programs and Sheroes and Startup Leadership. She is a board member of GS-ISB 10000 women and also been a committee member for Grace Hopper Confidence. She is a known speaker at conferences and educational institutions on subjects like  Technology, Entrepreneurship, Innovation, Augmented and Virtual Reality.";
     modal.style.display = "block";
 }
+btn5.onclick  = function() {
+  document.getElementById("head_name").innerHTML="Venkat Narayana Murthy";
+  document.getElementById("head_details").innerHTML="A true Indian by heart, as he calls himself, Venkat Narayana Murthy is a passionate theater enthusiast who has experienced varied cultures of India at disposal. Directing plays ranging from social issues to light-hearted comedies, Venkat always want to present the unseen and unheard stories to his audience through the archaic tradition of theater plays. He has performed more than 80 plays in Delhi, Mumbai and his directorial debut play in Hyderabad- 'Holi' received a lot of applaud. He has also been an anchor at Topper TV and one of the key members in setting up a non-profit organization, TOHF in Mumbai for underprivileged women and children. He looked after many campaigns for supporting cancer patients and a major collector for Nepal Earthquake Relief Campaign. He is a motivational speaker, known to speak on peace related issues among different religions in India.";
+    modal.style.display = "block";
+}
 btnn.onclick = function() {
   document.getElementById("head_name").innerHTML="SRINIDHI DASAKA";
   document.getElementById("head_details").innerHTML="A social media evangelist, a digital initiative deviser as she calls herself, Srinidhi Dasaka is a dedicated HR Professional, who lives by the motto- &#39;You live only once, but if you do it right, once is enough.&#39; Being a self taught artist and mentor, she&#39;ll be talking about creating and utilizing opportunities and also how small changes can lead to big realization of goals in one&#39;s life. She says, &quot;When an opportunity doesn&#39;t knock at your door, you walk up to it,&quot; giving insights into her goals and her journey of life.";
@@ -750,6 +772,11 @@ btnn2.onclick  = function() {
    document.getElementById("head_details").innerHTML="A successful entrepreneur and engineer, Vaishali Neotia is the CEO and co-founder of the largest, virtual reality and augmented reality company Merxius, which has been featured in well known newspapers such as Deccan Chronicle, The Hindu, TOI, CNBC etc. Merxius also received honors from IBM etc. Being an alumnus of Indian School of Business and Goldman  Sachs 10000 women and Stanford Graduate School of Business, she was a revolutionist and also mentored for initiatives such as Girls in tech, US Exchange Programs and Sheroes and Startup Leadership. She is a board member of GS-ISB 10000 women and also been a committee member for Grace Hopper Confidence. She is a known speaker at conferences and educational institutions on subjects like  Technology, Entrepreneurship, Innovation, Augmented and Virtual Reality.";
      modal.style.display = "block";
  }
+ btnn5.onclick  = function() {
+  document.getElementById("head_name").innerHTML="Venkat Narayana Murthy";
+  document.getElementById("head_details").innerHTML="A true Indian by heart, as he calls himself, Venkat Narayana Murthy is a passionate theater enthusiast who has experienced varied cultures of India at disposal. Directing plays ranging from social issues to light-hearted comedies, Venkat always want to present the unseen and unheard stories to his audience through the archaic tradition of theater plays. He has performed more than 80 plays in Delhi, Mumbai and his directorial debut play in Hyderabad- 'Holi' received a lot of applaud. He has also been an anchor at Topper TV and one of the key members in setting up a non-profit organization, TOHF in Mumbai for underprivileged women and children. He looked after many campaigns for supporting cancer patients and a major collector for Nepal Earthquake Relief Campaign. He is a motivational speaker, known to speak on peace related issues among different religions in India.";
+    modal.style.display = "block";
+}
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
