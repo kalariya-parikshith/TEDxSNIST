@@ -618,6 +618,16 @@ onmouseout="this.src='vaishali.jpg'" class="gg" id="myBtn4"/></div>
      <p class="typewriter">Vaishali Neotia</p></div>
 </div>
 </div>
+<div class="plr">
+<div class="post-container">
+ <div class="post-thumb"><img src="swathivijay.jpg" onmouseover="this.src='swathivijay1.jpg'"
+onmouseout="this.src='swathivijay.jpg'" class="gg" id="myBtn6"/></div>
+<center class="des"><div >This August<br>At TedxSnist</div></center>
+ <div class="post-content faidin">
+
+     <p class="typewriter">Swathi and Vijay Kumar</p></div>
+</div>
+</div>
 
 </div>
 <!--
@@ -648,7 +658,7 @@ onmouseout="this.src='img_avatar.png'" style="width:250px;" id="myBtn4"/></div>
 </div> -->
 <div class="mobc">
 <center><img src="venkat.jpg" onmouseover="this.src='venkat1.jpg'"
-onmouseout="this.src='venkat.jpg'" class="gg" id="myBtnn5"/></center>
+onmouseout="this.src='venkat.jpg'" class="gg" id="myBtnn5"/></center><br>
   <center><img src="srinidhi.jpg" onmouseover="this.src='srinidhi1.jpg'"
 onmouseout="this.src='srinidhi.jpg'" class="gg" id="myBtnn"/></center><br>
 <!-- <center><img src="IMG-20170626-WA0009.jpg" onmouseover="this.src='PicsArt_06-27-10.42.18.jpg'"
@@ -658,7 +668,9 @@ onmouseout="this.src='devyanikarbanda.jpg'" class="gg" id="myBtnn2"/></center><b
 <center><img src="bhargav.jpg" onmouseover="this.src='bhargav1.jpg'"
 onmouseout="this.src='bhargav.jpg'" class="gg" id="myBtnn3"/></center><br>
 <center><img src="vaishali.jpg" onmouseover="this.src='vaishali1.jpg'"
-onmouseout="this.src='vaishali.jpg'" class="gg" id="myBtnn4"/></center>
+onmouseout="this.src='vaishali.jpg'" class="gg" id="myBtnn4"/></center><br>
+<center><img src="swathivijay.jpg" onmouseover="this.src='swathivijay1.jpg'"
+onmouseout="this.src='swathivijay.jpg'" class="gg" id="myBtnn6"/></center>
 
 
 </div>
@@ -711,9 +723,11 @@ var btnn2 = document.getElementById("myBtnn2");
 var btn3 = document.getElementById("myBtn3");
 var btn4 = document.getElementById("myBtn4");
 var btn5 = document.getElementById("myBtn5");
+var btn6 = document.getElementById("myBtn6");
 var btnn3 = document.getElementById("myBtnn3");
 var btnn4 = document.getElementById("myBtnn4");
 var btnn5 = document.getElementById("myBtnn5");
+var btnn6 = document.getElementById("myBtnn6");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal
@@ -747,6 +761,11 @@ btn5.onclick  = function() {
   document.getElementById("head_details").innerHTML="A true Indian by heart, as he calls himself, Venkat Narayana Murthy is a passionate theater enthusiast who has experienced varied cultures of India at disposal. Directing plays ranging from social issues to light-hearted comedies, Venkat always want to present the unseen and unheard stories to his audience through the archaic tradition of theater plays. He has performed more than 80 plays in Delhi, Mumbai and his directorial debut play in Hyderabad- 'Holi' received a lot of applaud. He has also been an anchor at Topper TV and one of the key members in setting up a non-profit organization, TOHF in Mumbai for underprivileged women and children. He looked after many campaigns for supporting cancer patients and a major collector for Nepal Earthquake Relief Campaign. He is a motivational speaker, known to speak on peace related issues among different religions in India.";
     modal.style.display = "block";
 }
+btn6.onclick  = function() {
+  document.getElementById("head_name").innerHTML="Swathi and Vijay Kumar";
+  document.getElementById("head_details").innerHTML="Mastered in Fine Arts, from Jawaharlal Nehru Architecture and Fine Art University College of Fine Arts, Swathi and Vijay Kumar, chose the unique way of art to highlight sensitive issues of society. Believing in the concept of spiritualizing human beings, the couple believes that this life should always have a purpose. This artist couple are one of the top 25 achievers of 2016, Hyderabad and also owns artistic collections- French Embassy and Shrishti Art Gallery. Some of their famous artistic pieces are 'Tash ka Patte' exhibited in Kingstreet, and auctioned at Cristies- 2017 London, Street Art at Jaipur Art Summit, 2016, 'Cook Book' in Ecole Nationale superieure Des Beaux Arts- 2013 Paris. The couple says, \"We like our work to be interactive and public friendly, involving people with the subject.\"                        ";
+    modal.style.display = "block";
+}
 btnn.onclick = function() {
   document.getElementById("head_name").innerHTML="SRINIDHI DASAKA";
   document.getElementById("head_details").innerHTML="A social media evangelist, a digital initiative deviser as she calls herself, Srinidhi Dasaka is a dedicated HR Professional, who lives by the motto- &#39;You live only once, but if you do it right, once is enough.&#39; Being a self taught artist and mentor, she&#39;ll be talking about creating and utilizing opportunities and also how small changes can lead to big realization of goals in one&#39;s life. She says, &quot;When an opportunity doesn&#39;t knock at your door, you walk up to it,&quot; giving insights into her goals and her journey of life.";
@@ -775,6 +794,11 @@ btnn2.onclick  = function() {
  btnn5.onclick  = function() {
   document.getElementById("head_name").innerHTML="Venkat Narayana Murthy";
   document.getElementById("head_details").innerHTML="A true Indian by heart, as he calls himself, Venkat Narayana Murthy is a passionate theater enthusiast who has experienced varied cultures of India at disposal. Directing plays ranging from social issues to light-hearted comedies, Venkat always want to present the unseen and unheard stories to his audience through the archaic tradition of theater plays. He has performed more than 80 plays in Delhi, Mumbai and his directorial debut play in Hyderabad- 'Holi' received a lot of applaud. He has also been an anchor at Topper TV and one of the key members in setting up a non-profit organization, TOHF in Mumbai for underprivileged women and children. He looked after many campaigns for supporting cancer patients and a major collector for Nepal Earthquake Relief Campaign. He is a motivational speaker, known to speak on peace related issues among different religions in India.";
+    modal.style.display = "block";
+}
+btnn6.onclick  = function() {
+  document.getElementById("head_name").innerHTML="Swathi and Vijay Kumar";
+  document.getElementById("head_details").innerHTML="Mastered in Fine Arts, from Jawaharlal Nehru Architecture and Fine Art University College of Fine Arts, Swathi and Vijay Kumar, chose the unique way of art to highlight sensitive issues of society. Believing in the concept of spiritualizing human beings, the couple believes that this life should always have a purpose. This artist couple are one of the top 25 achievers of 2016, Hyderabad and also owns artistic collections- French Embassy and Shrishti Art Gallery. Some of their famous artistic pieces are 'Tash ka Patte' exhibited in Kingstreet, and auctioned at Cristies- 2017 London, Street Art at Jaipur Art Summit, 2016, 'Cook Book' in Ecole Nationale superieure Des Beaux Arts- 2013 Paris. The couple says, \"We like our work to be interactive and public friendly, involving people with the subject.\"                        ";
     modal.style.display = "block";
 }
 // When the user clicks on <span> (x), close the modal
