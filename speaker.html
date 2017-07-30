@@ -640,6 +640,16 @@ onmouseout="this.src='dinaz.jpg'" class="gg" id="myBtn7"/></div>
 </div>
 </div>
 
+<div class="plr">
+<div class="post-container">
+ <div class="post-thumb"><img src="kiran.jpg" onmouseover="this.src='kiran.jpg'"
+onmouseout="this.src='kiran.jpg'" class="gg" id="myBtn8"/></div>
+<center class="des"><div >This August<br>At TedxSnist</div></center>
+ <div class="post-content faidin">
+
+     <p class="typewriter">Kiran Dembla</p></div>
+</div>
+</div>
 </div>
 <!--
 <div class="plr">
@@ -684,6 +694,8 @@ onmouseout="this.src='vaishali.jpg'" class="gg" id="myBtnn4"/></center><br>
 onmouseout="this.src='swathivijay.jpg'" class="gg" id="myBtnn6"/></center><br>
 <center><img src="dinaz.jpg" onmouseover="this.src='dinaz1.jpg'"
 onmouseout="this.src='dinaz.jpg'" class="gg" id="myBtnn7"/></center><br>
+<center><img src="kiran.jpg" onmouseover="this.src='kiran.jpg'"
+onmouseout="this.src='kiran.jpg'" class="gg" id="myBtnn8"/></center><br>
 
 
 
@@ -739,11 +751,13 @@ var btn4 = document.getElementById("myBtn4");
 var btn5 = document.getElementById("myBtn5");
 var btn6 = document.getElementById("myBtn6");
 var btn7 = document.getElementById("myBtn7");
+var btn8 = document.getElementById("myBtn8");
 var btnn3 = document.getElementById("myBtnn3");
 var btnn4 = document.getElementById("myBtnn4");
 var btnn5 = document.getElementById("myBtnn5");
 var btnn6 = document.getElementById("myBtnn6");
 var btnn7 = document.getElementById("myBtnn7");
+var btnn8 = document.getElementById("myBtnn8");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal
@@ -780,6 +794,11 @@ btn5.onclick  = function() {
 btn7.onclick  = function() {
   document.getElementById("head_name").innerHTML=" Dinaz Vervatwala";
   document.getElementById("head_details").innerHTML="Dinaz is India's fitness expert, a Guinness Book of world record holder, third runner's up of the Miss Fitness Universe pageant, an accomplished baker, a successful entrepreneur and a supermum. She plays all these roles with finesse. Her story is heartening and awe inspiring- from a humble background, losing her father at a very early age and escaping from the jaws of death, she has turned each challenge into an opportunity, starting her career as a chartered accountant.";
+    modal.style.display = "block";
+}
+btn8.onclick  = function() {
+  document.getElementById("head_name").innerHTML=" Kiran Dembla";
+  document.getElementById("head_details").innerHTML="Smashing down the stereotype- \"Women can't be physically strong,\" Kiran Dembla was the first Indian woman to get duo medals for her six pack and and was awarded the most beautiful body builder in women body building competition held in Hungary. Guilt has taken over her, after marriage at the age of 32, when she started putting weight and had health issues, which had driven her towards fitness and have her the determination to lose her weight. At the age of 39, with sheer determination, she got an even toned body with perfect 6-pack abs with a proper dietary and medical supervision, saying no to steroids. Today, she stands as a lady with a physically toned body as a body builder, with her age being 41 and her works featured in Hyderabad Times, The Hindu, Eenadu etc. Apart from being a certified fitness trainer, Kiran is also a professionally trained classical singer and a certified nutritionist. Her cliental includes notable film stars like Tapsee, Anushka Shetty, Nayanatara, Rakul Preet and many more. \"Women, especially housewives, give 100 excuses to not exercise. But when you prioritize things, finding time to exercise is not difficult,\" says Kiran.";
     modal.style.display = "block";
 }
 btnn.onclick = function() {
@@ -825,6 +844,11 @@ btnn6.onclick  = function() {
 btnn7.onclick  = function() {
   document.getElementById("head_name").innerHTML=" Dinaz Vervatwala";
   document.getElementById("head_details").innerHTML="Dinaz is India's fitness expert, a Guinness Book of world record holder, third runner's up of the Miss Fitness Universe pageant, an accomplished baker, a successful entrepreneur and a supermum. She plays all these roles with finesse. Her story is heartening and awe inspiring- from a humble background, losing her father at a very early age and escaping from the jaws of death, she has turned each challenge into an opportunity, starting her career as a chartered accountant.";
+    modal.style.display = "block";
+}
+btnn8.onclick  = function() {
+  document.getElementById("head_name").innerHTML=" Kiran Dembla";
+  document.getElementById("head_details").innerHTML="Smashing down the stereotype- &quot;Women can't be physically strong,&quot; Kiran Dembla was the first Indian woman to get duo medals for her six pack and and was awarded the most beautiful body builder in women body building competition held in Hungary. Guilt has taken over her, after marriage at the age of 32, when she started putting weight and had health issues, which had driven her towards fitness and have her the determination to lose her weight. At the age of 39, with sheer determination, she got an even toned body with perfect 6-pack abs with a proper dietary and medical supervision, saying no to steroids. Today, she stands as a lady with a physically toned body as a body builder, with her age being 41 and her works featured in Hyderabad Times, The Hindu, Eenadu etc. Apart from being a certified fitness trainer, Kiran is also a professionally trained classical singer and a certified nutritionist. Her cliental includes notable film stars like Tapsee, Anushka Shetty, Nayanatara, Rakul Preet and many more.&quot;Women, especially housewives, give 100 excuses to not exercise. But when you prioritize things, finding time to exercise is not difficult,&quot; says Kiran.";
     modal.style.display = "block";
 }
 // When the user clicks on <span> (x), close the modal
