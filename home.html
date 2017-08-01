@@ -308,15 +308,15 @@ height:400px;
 }
 }
 </style>
-<!--<div class="w3-top">
+<div class="w3-top">
 <div class="navbarb">
   
   <ul style="bottom:0;">
-  <li><a href="home.html" class="subm">buy tickets before <span id="demo"></span></a></li>
+  <li><a href="home.html" class="subm"><span id="demo"></span></a></li>
   
 </ul>
 </div>
-</div>-->
+</div>
  <style>
  [class^="img"] {
     display: inline-block;
@@ -486,8 +486,8 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours "
+    + minutes + " Minutes " + seconds + " Seconds ";
     
     // If the count down is over, write some text 
     if (distance < 0) {
